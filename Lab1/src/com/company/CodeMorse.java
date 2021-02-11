@@ -6,23 +6,9 @@ import java.util.Map;
 
 
 public class CodeMorse {
-    boolean Coding;
 
     Map<String, String> CodeDictionary = new HashMap<String, String>();
     Map<String, String> DecodeDictionary = new HashMap<String, String>();
-
-
-    public void read_code(String value){
-        try {
-            File file = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "codes.txt");
-            FileReader fr = new FileReader(file);
-            BufferedReader reader = new BufferedReader(fr);
-            value = reader.readLine();
-            System.out.println(value);
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-    }
 
     public void FillDictionaries(){
 
@@ -42,9 +28,5 @@ public class CodeMorse {
             e.printStackTrace();
         }
     }
-
-
-
-
 
 }

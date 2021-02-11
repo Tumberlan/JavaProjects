@@ -1,11 +1,13 @@
 package com.company;
 
+import java.awt.*;
 import java.io.*;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Coder {
     File f_in = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "test.txt");
+    File f_out = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "output.txt");
 
     CodeMorse c = new CodeMorse();
     Coder(){
@@ -43,6 +45,7 @@ public class Coder {
                 FileReader fr = new FileReader(f_in);
                 BufferedReader reader = new BufferedReader(fr);
                 String value = reader.readLine();
+                StringBuilder ads = new StringBuilder();
                 while (value != null) {
                     value = value.toUpperCase(Locale.ROOT);
                     String parse_symbol = " ";
@@ -52,18 +55,17 @@ public class Coder {
                         for (int i = 0; i < sub_sub_str.length; i++) {
                             String answer = c.CodeDictionary.get(sub_sub_str[i]);
                             if(i == sub_sub_str.length - 1){
-                                printStream.print(answer);
-                                System.out.print(answer);
+                                ads.append(answer);
                             }else{
-                                printStream.print(answer + " ");
-                                System.out.print(answer + " ");
+                                ads.append(answer).append(" ");
                             }
                         }
-                        printStream.print("   ");
-                        System.out.print("   ");
+                        ads.append("   ");
                     }
                     value = reader.readLine();
                 }
+                printStream.println(ads.toString());
+                System.out.println(ads.toString());
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -74,28 +76,29 @@ public class Coder {
 
     public void decoding(){
         try {
-            FileOutputStream fos = new FileOutputStream("C://Users//Igor//ProgProjects//JavaProjects//Lab1//output.txt");
+            FileOutputStream fos = new FileOutputStream("C://Users//Igor//ProgProjects//JavaProjects//Lab1//test.txt");
             PrintStream printStream = new PrintStream(fos);
 
             try {
-                FileReader fr = new FileReader(f_in);
+                FileReader fr = new FileReader(f_out);
                 BufferedReader reader = new BufferedReader(fr);
                 String value = reader.readLine();
+                StringBuilder ads = new StringBuilder();
                 while (value != null) {
                     String parse_symbol = "   ";
                     String[] sub_str = value.split(parse_symbol);
                     for (String s : sub_str) {
                         String[] sub_sub_str = s.split(" ");
-                        for (int i = 0; i < sub_sub_str.length; i++) {
-                            String answer = c.DecodeDictionary.get(sub_sub_str[i]);
-                            printStream.print(answer);
-                            System.out.print(answer);
+                        for (String item : sub_sub_str) {
+                            String answer = c.DecodeDictionary.get(item);
+                            ads.append(answer);
                         }
-                        printStream.print(" ");
-                        System.out.print(" ");
+                        ads.append(" ");
                     }
                     value = reader.readLine();
                 }
+                printStream.println(ads.toString());
+                System.out.println(ads.toString());
             }catch (IOException e){
                 e.printStackTrace();
             }
@@ -104,11 +107,50 @@ public class Coder {
         }
     }
 
-    public void take_command(String command){
+    public void take_command(){
+        Scanner in = new Scanner(System.in);
+        String command = in.nextLine();
         if(command.equals("code")){
             coding();
+            take_command();
         }else if(command.equals("decode")){
             decoding();
+            take_command();
+        }else if(command.equals("edit file")){
+            System.out.println("Choose file 'test' or 'output'");
+            Desktop desktop = null;
+            if (Desktop.isDesktopSupported()) {
+                desktop = Desktop.getDesktop();
+            }
+            boolean checker = true;
+            while(checker) {
+                in = new Scanner(System.in);
+                command = in.nextLine();
+                if (command.equals("test")) {
+                    try {
+                        assert desktop != null;
+                        desktop.open(f_in);
+                    } catch (IOException ioe) {
+                        ioe.printStackTrace();
+                    }
+                    checker = false;
+                } else if (command.equals("output")) {
+                    try {
+                        assert desktop != null;
+                        desktop.open(f_out);
+                    } catch (IOException ioe) {
+                        ioe.printStackTrace();
+                    }
+                    checker = false;
+                }else{
+                    System.out.println("Wrong file name! Please choose file 'test' or 'output'");
+                }
+            }
+            take_command();
+        } else if(!command.equals("end")) {
+            System.out.println("Wrong command! Please use 'code', 'decode', 'edit file' or 'end'");
+            take_command();
         }
+
     }
 }
