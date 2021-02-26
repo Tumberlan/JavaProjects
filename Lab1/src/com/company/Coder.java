@@ -1,15 +1,12 @@
 package com.company;
 
-import java.awt.*;
 import java.io.*;
-import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
-import java.util.Scanner;
+
 
 public class Coder {
-    File f_in = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "test.txt");
-    File f_out = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "output.txt");
+    File fIn = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "test.txt");
+    File fOut = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "output.txt");
     File file;
 
     CodeMorse c;
@@ -20,26 +17,6 @@ public class Coder {
         c.FillDictionaries();
     }
 
-    public void read(char[] array, int amountOfSymbols, Scanner in){
-
-        Reader reader = null;
-        try{
-            reader =  new InputStreamReader(new FileInputStream("test.txt"));
-        }catch (IOException e){
-            System.err.println("Error during reading file: " + e.getLocalizedMessage());
-        }
-        finally {
-            if(reader != null){
-                try{
-                    int a = reader.read(array, 0, amountOfSymbols);
-                    in.close();
-                    reader.close();
-                }catch (IOException e){
-                    e.printStackTrace(System.err);
-                }
-            }
-        }
-    }
 
     public void coding(){
 
@@ -48,12 +25,11 @@ public class Coder {
             PrintStream printStream = new PrintStream(fos);
 
             try {
-                FileReader fr = new FileReader(f_in);
+                FileReader fr = new FileReader(fIn);
                 BufferedReader reader = new BufferedReader(fr);
                 String value = reader.readLine();
                 StringBuilder ads = new StringBuilder();
-                CodeMorse tmp = new CodeMorse(file);
-                tmp.FillDictionaries();
+                Calculator tmp = new Calculator();
                 boolean tick = false;
                 while (value != null) {
                     if(tick){
@@ -68,15 +44,9 @@ public class Coder {
                         String[] sub_sub_str = s.split("");
                         for (int i = 0; i < sub_sub_str.length; i++) {
                             String answer = c.CodeDictionary.get(sub_sub_str[i]);
-                            /*if(answer != null) {
-                                int amount = Integer.parseInt(tmp.AmountDictionary.get(sub_sub_str[i]));
-                                amount++;
-                                tmp.AmountDictionary.remove(sub_sub_str[i]);
-                                tmp.AmountDictionary.put(sub_sub_str[i], Integer.toString(amount));
-                            }*/
                             if(answer != null) {
                                 if(!sub_sub_str[i].equals("")) {
-                                    tmp.calc.add(sub_sub_str[i].charAt(0));
+                                    tmp.add(sub_sub_str[i].charAt(0));
                                 }
                             }
                             if (i == sub_sub_str.length - 1) {
@@ -90,10 +60,9 @@ public class Coder {
                     }
                     value = reader.readLine();
                 }
-                //ads.append("_________");
                 printStream.println(ads.toString());
                 System.out.println(ads.toString());
-                c.calc = tmp.calc;
+                c.Calc = tmp;
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -108,12 +77,12 @@ public class Coder {
             PrintStream printStream = new PrintStream(fos);
 
             try {
-                FileReader fr = new FileReader(f_out);
+                FileReader fr = new FileReader(fOut);
                 BufferedReader reader = new BufferedReader(fr);
                 String value = reader.readLine();
                 StringBuilder ads = new StringBuilder();
-                CodeMorse tmp = new CodeMorse(file);
-                tmp.FillDictionaries();
+                Calculator tmp = new Calculator();
+
                 boolean tick = false;
                 while (value != null) {
                     if(tick){
@@ -128,15 +97,9 @@ public class Coder {
                         for (String item : sub_sub_str) {
 
                             String answer = c.DecodeDictionary.get(item);
-                            /*if(answer != null) {
-                                int amount = Integer.parseInt(tmp.AmountDictionary.get(answer));
-                                amount++;
-                                tmp.AmountDictionary.remove(answer);
-                                tmp.AmountDictionary.put(answer, Integer.toString(amount));
-                            }*/
                             if(answer != null) {
                                 if(!answer.equals("")) {
-                                    tmp.calc.add(answer.charAt(0));
+                                    tmp.add(answer.charAt(0));
                                 }
                             }
 
@@ -149,7 +112,7 @@ public class Coder {
                 }
                 printStream.println(ads.toString());
                 System.out.println(ads.toString());
-                c.calc = tmp.calc;
+                c.Calc = tmp;
             }catch (IOException e){
                 e.printStackTrace();
             }

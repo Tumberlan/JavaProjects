@@ -1,23 +1,23 @@
 package com.company;
 
 public class CharStat implements Comparable{
-    Character value;
-    int amount;
+    Character Value;
+    int Amount;
 
 
     public CharStat(Character val){
-        value = val;
-        amount = 1;
+        Value = val;
+        Amount = 1;
     }
 
     public void increase(){
-        amount++;
+        Amount++;
     }
 
     @Override
     public int compareTo(Object other){
         CharStat cs = (CharStat) other;
-        int result = amount - cs.amount;
+        int result = Amount - cs.Amount;
         if(result != 0){
             return result / Math.abs(result);
         }
@@ -34,11 +34,11 @@ public class CharStat implements Comparable{
         }
 
         CharStat cs = (CharStat) other;
-        if(cs.value.equals('—')){
+        if(cs.Value.equals('—')){
             ((CharStat) other).increase();
             return true;
         }
-        if(value == cs.value){
+        if(Value == cs.Value){
             ((CharStat) other).increase();
             return true;
         }
@@ -49,6 +49,6 @@ public class CharStat implements Comparable{
 
     @Override
     public int hashCode(){
-        return (int)value;
+        return (int)Value;
     }
 }

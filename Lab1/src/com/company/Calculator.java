@@ -9,25 +9,23 @@ public class Calculator{
 
     public Calculator(){}
 
-    public void add(Character c){
-        stats.add(new CharStat(c));
+    public void add(Character C){
+        stats.add(new CharStat(C));
     }
 
     public void WriteAmount(){
         try {
             FileOutputStream fos = new FileOutputStream("C://Users//Igor//ProgProjects//JavaProjects//Lab1//amount.txt");
             PrintStream printStream = new PrintStream(fos);
-            List<CharStat> sortedStats = new ArrayList<CharStat>(stats);
-            Collections.sort(sortedStats);
-            for(CharStat stat: sortedStats){
-                printStream.println(stat.value.toString() + " " + stat.amount);
-                System.out.println(stat.value.toString() + " " + stat.amount);
+            List<CharStat> SortedStats = new ArrayList<CharStat>(stats);
+            Collections.sort(SortedStats);
+            for(CharStat stat: SortedStats){
+                printStream.println(stat.Value.toString() + " " + stat.Amount);
+                System.out.println(stat.Value.toString() + " " + stat.Amount);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
-
-
 
 }

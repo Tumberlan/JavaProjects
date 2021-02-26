@@ -5,11 +5,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class command {
+public class Command {
 
-    File En_file = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "En_file.txt");
-    File Ru_file = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "Ru_file.txt");
-    File Own_file = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "Own_file.txt");
+    File EnFile = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "En_file.txt");
+    File RuFile = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "Ru_file.txt");
+    File OwnFile = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "Own_file.txt");
     Coder coder = new Coder();
 
 
@@ -19,10 +19,10 @@ public class command {
 
         if(setter) {
             if (command.equals("1")) {
-                coder.take_file(En_file);
+                coder.take_file(EnFile);
                 take_command(false);
             } else if (command.equals("2")) {
-                coder.take_file(Ru_file);
+                coder.take_file(RuFile);
                 take_command(false);
             } else if (command.equals("3")) {
                 Desktop desktop = null;
@@ -31,11 +31,11 @@ public class command {
                 }
                 try {
                     assert desktop != null;
-                    desktop.open(Own_file);
+                    desktop.open(OwnFile);
                 } catch (IOException ioe) {
                     ioe.printStackTrace();
                 }
-                coder.take_file(Own_file);
+                coder.take_file(OwnFile);
                 take_command(false);
             } else {
                 System.out.println("You can only use '1' for English file, '2' for Russian and '3' for your own");
@@ -49,7 +49,7 @@ public class command {
                 coder.decoding();
                 take_command(false);
             }else if(command.equals("count")){
-                coder.c.calc.WriteAmount();
+                coder.c.Calc.WriteAmount();
                 take_command(false);
             }else if(command.equals("edit file")){
                 System.out.println("Choose file 'test' or 'output'");
@@ -64,7 +64,7 @@ public class command {
                     if (command.equals("test")) {
                         try {
                             assert desktop != null;
-                            desktop.open(coder.f_in);
+                            desktop.open(coder.fIn);
                         } catch (IOException ioe) {
                             ioe.printStackTrace();
                         }
@@ -72,7 +72,7 @@ public class command {
                     } else if (command.equals("output")) {
                         try {
                             assert desktop != null;
-                            desktop.open(coder.f_out);
+                            desktop.open(coder.fOut);
                         } catch (IOException ioe) {
                             ioe.printStackTrace();
                         }
@@ -87,9 +87,5 @@ public class command {
                 take_command(false);
             }
         }
-
-
-
-
     }
 }
