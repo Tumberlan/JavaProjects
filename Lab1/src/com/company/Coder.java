@@ -10,9 +10,13 @@ import java.util.Scanner;
 public class Coder {
     File f_in = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "test.txt");
     File f_out = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "output.txt");
+    File file;
 
-    CodeMorse c = new CodeMorse();
-    Coder(){
+    CodeMorse c;
+
+    public void take_file(File f){
+        file = f;
+        c = new CodeMorse(file);
         c.FillDictionaries();
     }
 
@@ -48,7 +52,7 @@ public class Coder {
                 BufferedReader reader = new BufferedReader(fr);
                 String value = reader.readLine();
                 StringBuilder ads = new StringBuilder();
-                CodeMorse tmp = new CodeMorse();
+                CodeMorse tmp = new CodeMorse(file);
                 tmp.FillDictionaries();
                 boolean tick = false;
                 while (value != null) {
@@ -64,11 +68,16 @@ public class Coder {
                         String[] sub_sub_str = s.split("");
                         for (int i = 0; i < sub_sub_str.length; i++) {
                             String answer = c.CodeDictionary.get(sub_sub_str[i]);
-                            if(answer != null) {
+                            /*if(answer != null) {
                                 int amount = Integer.parseInt(tmp.AmountDictionary.get(sub_sub_str[i]));
                                 amount++;
                                 tmp.AmountDictionary.remove(sub_sub_str[i]);
                                 tmp.AmountDictionary.put(sub_sub_str[i], Integer.toString(amount));
+                            }*/
+                            if(answer != null) {
+                                if(!sub_sub_str[i].equals("")) {
+                                    tmp.calc.add(sub_sub_str[i].charAt(0));
+                                }
                             }
                             if (i == sub_sub_str.length - 1) {
                                 ads.append(answer);
@@ -84,7 +93,7 @@ public class Coder {
                 //ads.append("_________");
                 printStream.println(ads.toString());
                 System.out.println(ads.toString());
-                c.AmountDictionary = tmp.AmountDictionary;
+                c.calc = tmp.calc;
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -103,7 +112,7 @@ public class Coder {
                 BufferedReader reader = new BufferedReader(fr);
                 String value = reader.readLine();
                 StringBuilder ads = new StringBuilder();
-                CodeMorse tmp = new CodeMorse();
+                CodeMorse tmp = new CodeMorse(file);
                 tmp.FillDictionaries();
                 boolean tick = false;
                 while (value != null) {
@@ -119,11 +128,16 @@ public class Coder {
                         for (String item : sub_sub_str) {
 
                             String answer = c.DecodeDictionary.get(item);
-                            if(answer != null) {
+                            /*if(answer != null) {
                                 int amount = Integer.parseInt(tmp.AmountDictionary.get(answer));
                                 amount++;
                                 tmp.AmountDictionary.remove(answer);
                                 tmp.AmountDictionary.put(answer, Integer.toString(amount));
+                            }*/
+                            if(answer != null) {
+                                if(!answer.equals("")) {
+                                    tmp.calc.add(answer.charAt(0));
+                                }
                             }
 
                             ads.append(answer);
@@ -135,7 +149,7 @@ public class Coder {
                 }
                 printStream.println(ads.toString());
                 System.out.println(ads.toString());
-                c.AmountDictionary = tmp.AmountDictionary;
+                c.calc = tmp.calc;
             }catch (IOException e){
                 e.printStackTrace();
             }
@@ -144,53 +158,4 @@ public class Coder {
         }
     }
 
-    public void take_command(){
-        Scanner in = new Scanner(System.in);
-        String command = in.nextLine();
-        if(command.equals("code")){
-            coding();
-            take_command();
-        }else if(command.equals("decode")){
-            decoding();
-            take_command();
-        }else if(command.equals("count")){
-            c.WriteAmount();
-            take_command();
-        }else if(command.equals("edit file")){
-            System.out.println("Choose file 'test' or 'output'");
-            Desktop desktop = null;
-            if (Desktop.isDesktopSupported()) {
-                desktop = Desktop.getDesktop();
-            }
-            boolean checker = true;
-            while(checker) {
-                in = new Scanner(System.in);
-                command = in.nextLine();
-                if (command.equals("test")) {
-                    try {
-                        assert desktop != null;
-                        desktop.open(f_in);
-                    } catch (IOException ioe) {
-                        ioe.printStackTrace();
-                    }
-                    checker = false;
-                } else if (command.equals("output")) {
-                    try {
-                        assert desktop != null;
-                        desktop.open(f_out);
-                    } catch (IOException ioe) {
-                        ioe.printStackTrace();
-                    }
-                    checker = false;
-                }else{
-                    System.out.println("Wrong file name! Please choose file 'test' or 'output'");
-                }
-            }
-            take_command();
-        } else if(!command.equals("end")) {
-            System.out.println("Wrong command! Please use 'code', 'decode', 'edit file' or 'end'");
-            take_command();
-        }
-
-    }
 }
