@@ -13,7 +13,7 @@ public class Calculator{
         stats.add(new CharStat(C));
     }
 
-    public void WriteAmount(){
+    public final void WriteAmount(){
         try {
             FileOutputStream fos = new FileOutputStream("C://Users//Igor//ProgProjects//JavaProjects//Lab1//amount.txt");
             PrintStream printStream = new PrintStream(fos);

@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Map;
 
 
-public class CodeMorse {
+public final class CodeMorse {
 
     File file;
     Map<String, String> CodeDictionary = new HashMap<String, String>();
@@ -19,7 +19,7 @@ public class CodeMorse {
     }
 
 
-    public void FillDictionaries(){
+    public final void FillDictionaries(){
 
         try {
 

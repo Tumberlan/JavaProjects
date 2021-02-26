@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Locale;
 
 
-public class Coder {
+public final class Coder {
     File fIn = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "test.txt");
     File fOut = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "output.txt");
     File file;

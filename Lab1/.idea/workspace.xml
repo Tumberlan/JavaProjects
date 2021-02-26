@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca1c1807-5a56-4598-b5fc-1a6fb381bc3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/CharStat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/CharStat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/CodeMorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/CodeMorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Coder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Coder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProjects/com/company/command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProjects/com/company/command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CharStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CharStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CodeMorse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CodeMorse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Coder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Coder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/command.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +112,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -147,7 +146,8 @@
       <workItem from="1614311430553" duration="9593000" />
       <workItem from="1614322119149" duration="69000" />
       <workItem from="1614322920045" duration="923000" />
-      <workItem from="1614324181651" duration="295000" />
+      <workItem from="1614324181651" duration="499000" />
+      <workItem from="1614326575297" duration="272000" />
     </task>
     <servers />
   </component>

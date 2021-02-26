@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Command {
+public final class Command {
 
     File EnFile = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "En_file.txt");
     File RuFile = new File("C://Users//Igor//ProgProjects//JavaProjects//Lab1", "Ru_file.txt");

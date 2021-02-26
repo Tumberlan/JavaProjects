@@ -2,7 +2,7 @@ package com.company;
 
 import java.lang.String;
 
-public class Main {
+public final class Main {
 
     public static void main(String[] args) {
         Command comm = new Command();
