@@ -43,9 +43,7 @@ public class CharStat implements Comparable{
             return true;
         }
         return false;
-
     }
-
 
     @Override
     public int hashCode(){

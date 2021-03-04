@@ -83,7 +83,7 @@ public final class Command {
                 }
                 take_command(false);
             } else if(!command.equals("end")) {
-                System.out.println("Wrong command! Please use 'code', 'decode', 'edit file' or 'end'");
+                System.out.println("Wrong command! Please use 'code', 'decode', 'count', 'edit file' or 'end'");
                 take_command(false);
             }
         }

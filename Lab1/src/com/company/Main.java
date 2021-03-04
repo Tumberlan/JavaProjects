@@ -8,7 +8,4 @@ public final class Main {
         Command comm = new Command();
         comm.take_command(true);
     }
-
-
-
 }
