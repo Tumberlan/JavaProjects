@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestTeleport" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-29T19:06:55" hostname="DESKTOP-JL5VDRM" time="0.016">
+  <properties/>
+  <testcase name="CommandStringCheck()" classname="TestTeleport" time="0.016"/>
+  <system-out><![CDATA[68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+69 [Test worker] INFO com.company.CommandDictionary  - file was opened
+69 [Test worker] INFO com.company.CommandDictionary  - file was opened
+69 [Test worker] INFO com.company.CommandDictionary  - file was opened
+69 [Test worker] INFO com.company.CommandDictionary  - file was opened
+70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . R . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+Wrong number of arguments
+75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+Wrong arguments
+76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+Wrong command name
+Wrong number of arguments
+76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . R . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+. . . R . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+82 [Test worker] INFO TestTeleport  - TestTeleport Completed
+82 [Test worker] INFO TestTeleport  - TestTeleport Completed
+82 [Test worker] INFO TestTeleport  - TestTeleport Completed
+82 [Test worker] INFO TestTeleport  - TestTeleport Completed
+Wrong command name
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

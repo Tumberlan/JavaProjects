@@ -1,0 +1,6 @@
+INIT com.company.commands.InitCommand
+MOVE com.company.commands.MoveCommand
+DRAW com.company.commands.DrawCommand
+WARD com.company.commands.WardCommand
+TELEPORT com.company.commands.TeleportCommand
+$

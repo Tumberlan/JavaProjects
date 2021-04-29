@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestDraw" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-29T19:06:55" hostname="DESKTOP-JL5VDRM" time="0.039">
+  <properties/>
+  <testcase name="CommandStringCheck()" classname="TestDraw" time="0.039"/>
+  <system-out><![CDATA[0 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+8 [Test worker] INFO com.company.CommandDictionary  - file was opened
+8 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+10 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+10 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . R . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+13 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+15 [Test worker] INFO com.company.CommandFabric  - DRAW class was added
+Wrong number of arguments
+15 [Test worker] INFO com.company.CommandFabric  - DRAW class was taken
+Wrong number of arguments
+18 [Test worker] INFO com.company.CommandFabric  - DRAW class was taken
+Wrong command name
+18 [Test worker] INFO com.company.commands.DrawCommand  - DRAW command was done
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . R . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+20 [Test worker] INFO com.company.CommandFabric  - DRAW class was taken
+21 [Test worker] INFO TestDraw  - TestDraw Completed
+Wrong command name
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

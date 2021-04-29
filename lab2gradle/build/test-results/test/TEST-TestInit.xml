@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestInit" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-29T19:06:55" hostname="DESKTOP-JL5VDRM" time="0.012">
+  <properties/>
+  <testcase name="CommandStringCheck()" classname="TestInit" time="0.012"/>
+  <system-out><![CDATA[32 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+32 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+33 [Test worker] INFO com.company.CommandDictionary  - file was opened
+33 [Test worker] INFO com.company.CommandDictionary  - file was opened
+33 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+33 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+34 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+34 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+35 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+35 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . R . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+37 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+37 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+38 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+38 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . R . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+40 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+40 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+Wrong arguments
+41 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+41 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+Wrong arguments
+42 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+42 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+Wrong arguments
+42 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+42 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+Wrong command name
+Wrong number of arguments
+43 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+43 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+43 [Test worker] INFO TestInit  - TestInit Completed
+43 [Test worker] INFO TestInit  - TestInit Completed
+Wrong command name
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

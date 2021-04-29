@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestWard" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-29T19:06:55" hostname="DESKTOP-JL5VDRM" time="0.014">
+  <properties/>
+  <testcase name="CommandStringCheck()" classname="TestWard" time="0.014"/>
+  <system-out><![CDATA[86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . R . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
+93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
+93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
+93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
+93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
+Wrong number of arguments
+94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+Wrong number of arguments
+95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+Wrong command name
+96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . R . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+98 [Test worker] INFO TestWard  - TestWard Completed
+98 [Test worker] INFO TestWard  - TestWard Completed
+98 [Test worker] INFO TestWard  - TestWard Completed
+98 [Test worker] INFO TestWard  - TestWard Completed
+98 [Test worker] INFO TestWard  - TestWard Completed
+Wrong command name
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
