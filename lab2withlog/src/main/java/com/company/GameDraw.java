@@ -9,12 +9,12 @@ public class GameDraw {
 
     private RobotDrawer robot = new RobotDrawer();
 
-    private File outF = new File("C://Users//Igor//ProgProjects//JavaProjects//lab2", "out.txt");
+   // private File outF = new File("C://Users//Igor//ProgProjects//JavaProjects//lab2", "out.txt");
     GameDraw() throws IOException {
     }
 
     public void PrintField() throws IOException {
-        FileWriter outFstream = new FileWriter(outF, false);
+     //   FileWriter outFstream = new FileWriter(outF, false);
         this.GetRobotFieldBalance();
         for(int i = 0; i < field.GetBorders().GetXCoord();i++){
             for(int j = 0; j < field.GetBorders().GetYCoord(); j++){
@@ -32,7 +32,7 @@ public class GameDraw {
             //outFstream.write('\n');
             System.out.print('\n');
         }
-        outFstream.close();
+       // outFstream.close();
     }
 
 
