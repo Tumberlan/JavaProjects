@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestMove" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-29T19:06:55" hostname="DESKTOP-JL5VDRM" time="0.019">
+<testsuite name="TestMove" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-30T05:07:26" hostname="DESKTOP-JL5VDRM" time="0.039">
   <properties/>
-  <testcase name="CommandStringCheck()" classname="TestMove" time="0.019"/>
-  <system-out><![CDATA[47 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-47 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-47 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-48 [Test worker] INFO com.company.CommandDictionary  - file was opened
-48 [Test worker] INFO com.company.CommandDictionary  - file was opened
-48 [Test worker] INFO com.company.CommandDictionary  - file was opened
-48 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-48 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-48 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-49 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-49 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-49 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-50 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-50 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-50 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+  <testcase name="CommandStringCheck()" classname="TestMove" time="0.039"/>
+  <system-out><![CDATA[64 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+64 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+64 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+66 [Test worker] INFO com.company.CommandDictionary  - file was opened
+66 [Test worker] INFO com.company.CommandDictionary  - file was opened
+66 [Test worker] INFO com.company.CommandDictionary  - file was opened
+67 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+67 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+67 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+68 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+68 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+68 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+68 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+68 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+68 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
@@ -27,16 +27,16 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-52 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-52 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-52 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 Wrong command name
-54 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
-54 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
-54 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
-57 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
-57 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
-57 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+79 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
+79 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
+79 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
+86 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+86 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+86 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -47,12 +47,12 @@ Wrong command name
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
-59 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-59 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-59 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-60 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
-60 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
-60 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+91 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+91 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+91 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+93 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+93 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+93 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -63,24 +63,21 @@ Wrong command name
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
-62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+96 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+96 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+96 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
 Wrong arguments
-62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+97 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+97 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+97 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
 Wrong number of arguments
-63 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-63 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-63 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+99 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+99 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+99 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
 Wrong number of arguments
-64 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-64 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-64 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-64 [Test worker] INFO TestMove  - TestMove Completed
-64 [Test worker] INFO TestMove  - TestMove Completed
-64 [Test worker] INFO TestMove  - TestMove Completed
+100 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+100 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+100 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
 Wrong command name
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

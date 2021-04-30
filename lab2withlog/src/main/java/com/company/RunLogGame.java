@@ -23,7 +23,7 @@ public class RunLogGame {
     public boolean TakeCommRes(String comm){
         return parser.AnalyzeCommand(comm);
     }
-    public void LessGo(){
+    public void RunGame(){
         Scanner in = new Scanner(System.in);
         String comm = in.nextLine();
         while (!comm.equals("end")) {

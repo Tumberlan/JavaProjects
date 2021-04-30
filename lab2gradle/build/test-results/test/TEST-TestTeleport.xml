@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestTeleport" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-29T19:06:55" hostname="DESKTOP-JL5VDRM" time="0.016">
+<testsuite name="TestTeleport" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-30T05:07:26" hostname="DESKTOP-JL5VDRM" time="0.024">
   <properties/>
-  <testcase name="CommandStringCheck()" classname="TestTeleport" time="0.016"/>
-  <system-out><![CDATA[68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-69 [Test worker] INFO com.company.CommandDictionary  - file was opened
-69 [Test worker] INFO com.company.CommandDictionary  - file was opened
-69 [Test worker] INFO com.company.CommandDictionary  - file was opened
-69 [Test worker] INFO com.company.CommandDictionary  - file was opened
-70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+  <testcase name="CommandStringCheck()" classname="TestTeleport" time="0.024"/>
+  <system-out><![CDATA[109 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+109 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+109 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+109 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+110 [Test worker] INFO com.company.CommandDictionary  - file was opened
+110 [Test worker] INFO com.company.CommandDictionary  - file was opened
+110 [Test worker] INFO com.company.CommandDictionary  - file was opened
+110 [Test worker] INFO com.company.CommandDictionary  - file was opened
+111 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+111 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+111 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+111 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+112 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+112 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+112 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+112 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+113 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+113 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+113 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+113 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
@@ -32,34 +32,34 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
-74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
-74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
-74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+114 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+114 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+114 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+114 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+121 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+121 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+121 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+121 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
 Wrong number of arguments
-75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+122 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+122 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+122 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+122 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
 Wrong arguments
-76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+124 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+124 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+124 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+124 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
 Wrong command name
 Wrong number of arguments
-76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+125 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+125 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+125 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+125 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+125 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+125 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+125 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+125 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -70,14 +70,14 @@ Wrong number of arguments
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+127 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+127 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+127 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+127 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+128 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+128 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+128 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+128 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
 . . . R . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -88,14 +88,10 @@ Wrong number of arguments
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-82 [Test worker] INFO TestTeleport  - TestTeleport Completed
-82 [Test worker] INFO TestTeleport  - TestTeleport Completed
-82 [Test worker] INFO TestTeleport  - TestTeleport Completed
-82 [Test worker] INFO TestTeleport  - TestTeleport Completed
+130 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+130 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+130 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+130 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
 Wrong command name
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

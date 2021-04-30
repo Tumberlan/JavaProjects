@@ -1,8 +1,8 @@
 C0 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-G8 [Test worker] INFO com.company.CommandDictionary  - file was opened
-P8 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-I10 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-Q10 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+G9 [Test worker] INFO com.company.CommandDictionary  - file was opened
+P9 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+I12 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+Q12 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
@@ -13,14 +13,14 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-I13 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I15 [Test worker] INFO com.company.CommandFabric  - DRAW class was added
+I16 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I18 [Test worker] INFO com.company.CommandFabric  - DRAW class was added
 Wrong number of arguments
-I15 [Test worker] INFO com.company.CommandFabric  - DRAW class was taken
+I19 [Test worker] INFO com.company.CommandFabric  - DRAW class was taken
 Wrong number of arguments
-I18 [Test worker] INFO com.company.CommandFabric  - DRAW class was taken
+I22 [Test worker] INFO com.company.CommandFabric  - DRAW class was taken
 Wrong command name
-Q18 [Test worker] INFO com.company.commands.DrawCommand  - DRAW command was done
+Q23 [Test worker] INFO com.company.commands.DrawCommand  - DRAW command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
@@ -31,19 +31,18 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-I20 [Test worker] INFO com.company.CommandFabric  - DRAW class was taken
-621 [Test worker] INFO TestDraw  - TestDraw Completed
+I25 [Test worker] INFO com.company.CommandFabric  - DRAW class was taken
 Wrong command name
-D32 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-D32 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-H33 [Test worker] INFO com.company.CommandDictionary  - file was opened
-H33 [Test worker] INFO com.company.CommandDictionary  - file was opened
-Q33 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-Q33 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-I34 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-I34 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-Q35 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-Q35 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+D44 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+D44 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+H45 [Test worker] INFO com.company.CommandDictionary  - file was opened
+H45 [Test worker] INFO com.company.CommandDictionary  - file was opened
+Q46 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+Q46 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+I47 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+I47 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+Q48 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+Q48 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . R . . . . . . 
@@ -54,10 +53,10 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-I37 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I37 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-Q38 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-Q38 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+I51 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I51 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+Q52 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+Q52 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
@@ -68,39 +67,37 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-I40 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I40 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I55 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I55 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 Wrong arguments
-I41 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I41 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I57 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I57 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 Wrong arguments
-I42 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I42 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I58 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I58 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 Wrong arguments
-I42 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I42 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I59 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I59 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 Wrong command name
 Wrong number of arguments
-I43 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I43 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-643 [Test worker] INFO TestInit  - TestInit Completed
-643 [Test worker] INFO TestInit  - TestInit Completed
+I60 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I60 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 Wrong command name
-D47 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-D47 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-D47 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-H48 [Test worker] INFO com.company.CommandDictionary  - file was opened
-H48 [Test worker] INFO com.company.CommandDictionary  - file was opened
-H48 [Test worker] INFO com.company.CommandDictionary  - file was opened
-Q48 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-Q48 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-Q48 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-I49 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-I49 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-I49 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-Q50 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-Q50 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-Q50 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+D64 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+D64 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+D64 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+H66 [Test worker] INFO com.company.CommandDictionary  - file was opened
+H66 [Test worker] INFO com.company.CommandDictionary  - file was opened
+H66 [Test worker] INFO com.company.CommandDictionary  - file was opened
+Q67 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+Q67 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+Q67 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+I68 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+I68 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+I68 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+Q68 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+Q68 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+Q68 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
@@ -111,16 +108,16 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-I52 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I52 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I52 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+I73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 Wrong command name
-I54 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
-I54 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
-I54 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
-Q57 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
-Q57 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
-Q57 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+I79 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
+I79 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
+I79 [Test worker] INFO com.company.CommandFabric  - MOVE class was added
+Q86 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+Q86 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+Q86 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -131,12 +128,12 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
-I59 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I59 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I59 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-Q60 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
-Q60 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
-Q60 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+I91 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I91 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I91 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+Q93 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+Q93 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
+Q93 [Test worker] INFO com.company.commands.MoveCommand  - MOVE command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -147,45 +144,42 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
-I62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I96 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I96 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I96 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
 Wrong arguments
-I62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I62 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I97 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I97 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I97 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
 Wrong number of arguments
-I63 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I63 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I63 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I99 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I99 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+I99 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
 Wrong number of arguments
-I64 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I64 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-I64 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
-664 [Test worker] INFO TestMove  - TestMove Completed
-664 [Test worker] INFO TestMove  - TestMove Completed
-664 [Test worker] INFO TestMove  - TestMove Completed
+J100 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+J100 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
+J100 [Test worker] INFO com.company.CommandFabric  - MOVE class was taken
 Wrong command name
-D68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-D68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-D68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-D68 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
-H69 [Test worker] INFO com.company.CommandDictionary  - file was opened
-H69 [Test worker] INFO com.company.CommandDictionary  - file was opened
-H69 [Test worker] INFO com.company.CommandDictionary  - file was opened
-H69 [Test worker] INFO com.company.CommandDictionary  - file was opened
-Q70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-Q70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-Q70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-Q70 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
-I71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-I71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-I71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-I71 [Test worker] INFO com.company.CommandFabric  - INIT class was added
-Q71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-Q71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-Q71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
-Q71 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+E109 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+E109 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+E109 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+E109 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+I110 [Test worker] INFO com.company.CommandDictionary  - file was opened
+I110 [Test worker] INFO com.company.CommandDictionary  - file was opened
+I110 [Test worker] INFO com.company.CommandDictionary  - file was opened
+I110 [Test worker] INFO com.company.CommandDictionary  - file was opened
+R111 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+R111 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+R111 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+R111 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+J112 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+J112 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+J112 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+J112 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+R113 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+R113 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+R113 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+R113 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . R . . . . . . . 
@@ -196,34 +190,34 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-I73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-I73 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
-M74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
-M74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
-M74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
-M74 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+J114 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+J114 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+J114 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+J114 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+N121 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+N121 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+N121 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
+N121 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was added
 Wrong number of arguments
-M75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M75 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N122 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N122 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N122 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N122 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
 Wrong arguments
-M76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N124 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N124 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N124 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N124 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
 Wrong command name
 Wrong number of arguments
-M76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M76 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-Y77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-Y77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-Y77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-Y77 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+N125 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N125 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N125 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N125 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+Z125 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+Z125 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+Z125 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+Z125 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -234,14 +228,14 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-M79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M79 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-Y80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-Y80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-Y80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
-Y80 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+N127 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N127 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N127 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N127 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+Z128 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+Z128 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+Z128 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
+Z128 [Test worker] INFO com.company.commands.TeleportCommand  - TELEPORT command was done
 . . . R . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
@@ -252,65 +246,61 @@
 . . . . . . . . . . 
 . . . . . . . . . . 
 . . . . . . . . . . 
-M82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
-M82 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
->82 [Test worker] INFO TestTeleport  - TestTeleport Completed
->82 [Test worker] INFO TestTeleport  - TestTeleport Completed
->82 [Test worker] INFO TestTeleport  - TestTeleport Completed
->82 [Test worker] INFO TestTeleport  - TestTeleport Completed
+N130 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N130 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N130 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
+N130 [Test worker] INFO com.company.CommandFabric  - TELEPORT class was taken
 Wrong command name
 
-	D86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+	E139 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
 
-	D86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+	E139 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
 
-	D86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+	E139 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
 
-	D86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+	E139 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
 
-	D86 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
+	E139 [Test worker] INFO com.company.RunLogGame  - Log Game start ...
 
-	H87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+	I142 [Test worker] INFO com.company.CommandDictionary  - file was opened
 
-	H87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+	I142 [Test worker] INFO com.company.CommandDictionary  - file was opened
 
-	H87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+	I142 [Test worker] INFO com.company.CommandDictionary  - file was opened
 
-	H87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+	I142 [Test worker] INFO com.company.CommandDictionary  - file was opened
 
-	H87 [Test worker] INFO com.company.CommandDictionary  - file was opened
+	I142 [Test worker] INFO com.company.CommandDictionary  - file was opened
 
-	Q88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+	R143 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
 
-	Q88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+	R143 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
 
-	Q88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+	R143 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
 
-	Q88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+	R143 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
 
-	Q88 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
+	R143 [Test worker] INFO com.company.CommandDictionary  - all commands were parsed
 
-	I88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+	J144 [Test worker] INFO com.company.CommandFabric  - INIT class was added
 
-	I88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+	J144 [Test worker] INFO com.company.CommandFabric  - INIT class was added
 
-	I88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+	J144 [Test worker] INFO com.company.CommandFabric  - INIT class was added
 
-	I88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+	J144 [Test worker] INFO com.company.CommandFabric  - INIT class was added
 
-	I88 [Test worker] INFO com.company.CommandFabric  - INIT class was added
+	J144 [Test worker] INFO com.company.CommandFabric  - INIT class was added
 
-	Q89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+	R145 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 
-	Q89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+	R145 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 
-	Q89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+	R145 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 
-	Q89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+	R145 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 
-	Q89 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
+	R145 [Test worker] INFO com.company.commands.InitCommand  - INIT command was done
 
 	. . . . . . . . . . 
 
@@ -332,61 +322,61 @@
 
 	. . . . . . . . . . 
 
-	I91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+	J147 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 
-	I91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+	J147 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 
-	I91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+	J147 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 
-	I91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+	J147 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 
-	I91 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
+	J147 [Test worker] INFO com.company.CommandFabric  - INIT class was taken
 
-	I93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
+	J150 [Test worker] INFO com.company.CommandFabric  - WARD class was added
 
-	I93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
+	J150 [Test worker] INFO com.company.CommandFabric  - WARD class was added
 
-	I93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
+	J150 [Test worker] INFO com.company.CommandFabric  - WARD class was added
 
-	I93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
+	J150 [Test worker] INFO com.company.CommandFabric  - WARD class was added
 
-	I93 [Test worker] INFO com.company.CommandFabric  - WARD class was added
-
-	Wrong number of arguments
-
-	I94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
-
-	I94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
-
-	I94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
-
-	I94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
-
-	I94 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J150 [Test worker] INFO com.company.CommandFabric  - WARD class was added
 
 	Wrong number of arguments
 
-	I95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J151 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
-	I95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J151 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
-	I95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J151 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
-	I95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J151 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
-	I95 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J151 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+
+	Wrong number of arguments
+
+	J153 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+
+	J153 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+
+	J153 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+
+	J153 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+
+	J153 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
 	Wrong command name
 
-	Q96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+	R155 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
 
-	Q96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+	R155 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
 
-	Q96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+	R155 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
 
-	Q96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+	R155 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
 
-	Q96 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
+	R155 [Test worker] INFO com.company.commands.WardCommand  - WARD command was done
 
 	. . . . . . . . . . 
 
@@ -408,24 +398,14 @@
 
 	. . . . . . . . . . 
 
-	I97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J157 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
-	I97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J157 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
-	I97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J157 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
-	I97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
+	J157 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
-	I97 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
-
-	698 [Test worker] INFO TestWard  - TestWard Completed
-
-	698 [Test worker] INFO TestWard  - TestWard Completed
-
-	698 [Test worker] INFO TestWard  - TestWard Completed
-
-	698 [Test worker] INFO TestWard  - TestWard Completed
-
-	698 [Test worker] INFO TestWard  - TestWard Completed
+	J157 [Test worker] INFO com.company.CommandFabric  - WARD class was taken
 
 	Wrong command name

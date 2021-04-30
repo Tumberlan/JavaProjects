@@ -11,6 +11,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BasicConfigurator.configure();
         RunLogGame RLG = new RunLogGame();
-        RLG.LessGo();
+        RLG.RunGame();
     }
 }

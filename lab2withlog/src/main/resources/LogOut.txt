@@ -1,124 +1,315 @@
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:36 - TELEPORT class was added
-2021-04-30 11:10:40 INFO  CommandFabric:36 - TELEPORT class was added
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  TeleportCommand:29 - TELEPORT command was done
-2021-04-30 11:10:40 INFO  TeleportCommand:29 - TELEPORT command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  TeleportCommand:29 - TELEPORT command was done
-2021-04-30 11:10:40 INFO  TeleportCommand:29 - TELEPORT command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - TELEPORT class was taken
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:36 - DRAW class was added
-2021-04-30 11:10:40 INFO  CommandFabric:36 - DRAW class was added
-2021-04-30 11:10:40 INFO  CommandFabric:63 - DRAW class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - DRAW class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - DRAW class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - DRAW class was taken
-2021-04-30 11:10:40 INFO  DrawCommand:30 - DRAW command was done
-2021-04-30 11:10:40 INFO  DrawCommand:30 - DRAW command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - DRAW class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - DRAW class was taken
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:36 - MOVE class was added
-2021-04-30 11:10:40 INFO  CommandFabric:36 - MOVE class was added
-2021-04-30 11:10:40 INFO  MoveCommand:43 - MOVE command was done
-2021-04-30 11:10:40 INFO  MoveCommand:43 - MOVE command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  MoveCommand:43 - MOVE command was done
-2021-04-30 11:10:40 INFO  MoveCommand:43 - MOVE command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - MOVE class was taken
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  RunLogGame:15 - Log Game start ...
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:24 - file was opened
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandDictionary:31 - all commands were parsed
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  CommandFabric:36 - INIT class was added
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  InitCommand:33 - INIT command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - INIT class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:36 - WARD class was added
-2021-04-30 11:10:40 INFO  CommandFabric:36 - WARD class was added
-2021-04-30 11:10:40 INFO  CommandFabric:63 - WARD class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - WARD class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - WARD class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - WARD class was taken
-2021-04-30 11:10:40 INFO  WardCommand:26 - WARD command was done
-2021-04-30 11:10:40 INFO  WardCommand:26 - WARD command was done
-2021-04-30 11:10:40 INFO  CommandFabric:63 - WARD class was taken
-2021-04-30 11:10:40 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:04:53.648 [Test worker] INFO  com.company.RunLogGame.<init>(RunLogGame.java:15) - Log Game start ...
+2021-04-30 12:04:53.667 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:24) - file was opened
+2021-04-30 12:04:53.668 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:31) - all commands were parsed
+2021-04-30 12:04:53.673 [Test worker] INFO  com.company.CommandFabric.FirstCreateCommand(CommandFabric.java:36) - INIT class was added
+2021-04-30 12:04:53.674 [Test worker] INFO  com.company.commands.InitCommand.DoCommand(InitCommand.java:33) - INIT command was done
+2021-04-30 12:04:53.682 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.684 [Test worker] INFO  com.company.CommandFabric.FirstCreateCommand(CommandFabric.java:36) - DRAW class was added
+2021-04-30 12:04:53.685 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - DRAW class was taken
+2021-04-30 12:04:53.692 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - DRAW class was taken
+2021-04-30 12:04:53.693 [Test worker] INFO  com.company.commands.DrawCommand.DoCommand(DrawCommand.java:30) - DRAW command was done
+2021-04-30 12:04:53.695 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - DRAW class was taken
+2021-04-30 12:04:53.697 [Test worker] INFO  TestDraw.CommandStringCheck(TestDraw.java:29) - TestDraw Completed
+2021-04-30 12:04:53.720 [Test worker] INFO  com.company.RunLogGame.<init>(RunLogGame.java:15) - Log Game start ...
+2021-04-30 12:04:53.722 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:24) - file was opened
+2021-04-30 12:04:53.723 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:31) - all commands were parsed
+2021-04-30 12:04:53.724 [Test worker] INFO  com.company.CommandFabric.FirstCreateCommand(CommandFabric.java:36) - INIT class was added
+2021-04-30 12:04:53.727 [Test worker] INFO  com.company.commands.InitCommand.DoCommand(InitCommand.java:33) - INIT command was done
+2021-04-30 12:04:53.730 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.731 [Test worker] INFO  com.company.commands.InitCommand.DoCommand(InitCommand.java:33) - INIT command was done
+2021-04-30 12:04:53.733 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.734 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.735 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.735 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.737 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.737 [Test worker] INFO  TestInit.CommandStringCheck(TestInit.java:36) - TestInit Completed
+2021-04-30 12:04:53.744 [Test worker] INFO  com.company.RunLogGame.<init>(RunLogGame.java:15) - Log Game start ...
+2021-04-30 12:04:53.746 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:24) - file was opened
+2021-04-30 12:04:53.747 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:31) - all commands were parsed
+2021-04-30 12:04:53.748 [Test worker] INFO  com.company.CommandFabric.FirstCreateCommand(CommandFabric.java:36) - INIT class was added
+2021-04-30 12:04:53.749 [Test worker] INFO  com.company.commands.InitCommand.DoCommand(InitCommand.java:33) - INIT command was done
+2021-04-30 12:04:53.753 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.756 [Test worker] INFO  com.company.CommandFabric.FirstCreateCommand(CommandFabric.java:36) - MOVE class was added
+2021-04-30 12:04:53.763 [Test worker] INFO  com.company.commands.MoveCommand.DoCommand(MoveCommand.java:43) - MOVE command was done
+2021-04-30 12:04:53.765 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - MOVE class was taken
+2021-04-30 12:04:53.767 [Test worker] INFO  com.company.commands.MoveCommand.DoCommand(MoveCommand.java:43) - MOVE command was done
+2021-04-30 12:04:53.768 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - MOVE class was taken
+2021-04-30 12:04:53.769 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - MOVE class was taken
+2021-04-30 12:04:53.770 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - MOVE class was taken
+2021-04-30 12:04:53.770 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - MOVE class was taken
+2021-04-30 12:04:53.771 [Test worker] INFO  TestMove.CommandStringCheck(TestMove.java:33) - TestMove Completed
+2021-04-30 12:04:53.778 [Test worker] INFO  com.company.RunLogGame.<init>(RunLogGame.java:15) - Log Game start ...
+2021-04-30 12:04:53.780 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:24) - file was opened
+2021-04-30 12:04:53.781 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:31) - all commands were parsed
+2021-04-30 12:04:53.782 [Test worker] INFO  com.company.CommandFabric.FirstCreateCommand(CommandFabric.java:36) - INIT class was added
+2021-04-30 12:04:53.783 [Test worker] INFO  com.company.commands.InitCommand.DoCommand(InitCommand.java:33) - INIT command was done
+2021-04-30 12:04:53.784 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.786 [Test worker] INFO  com.company.CommandFabric.FirstCreateCommand(CommandFabric.java:36) - TELEPORT class was added
+2021-04-30 12:04:53.787 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - TELEPORT class was taken
+2021-04-30 12:04:53.788 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - TELEPORT class was taken
+2021-04-30 12:04:53.789 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - TELEPORT class was taken
+2021-04-30 12:04:53.791 [Test worker] INFO  com.company.commands.TeleportCommand.DoCommand(TeleportCommand.java:29) - TELEPORT command was done
+2021-04-30 12:04:53.792 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - TELEPORT class was taken
+2021-04-30 12:04:53.793 [Test worker] INFO  com.company.commands.TeleportCommand.DoCommand(TeleportCommand.java:29) - TELEPORT command was done
+2021-04-30 12:04:53.795 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - TELEPORT class was taken
+2021-04-30 12:04:53.796 [Test worker] INFO  TestTeleport.CommandStringCheck(TestTeleport.java:33) - TestTeleport Completed
+2021-04-30 12:04:53.802 [Test worker] INFO  com.company.RunLogGame.<init>(RunLogGame.java:15) - Log Game start ...
+2021-04-30 12:04:53.805 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:24) - file was opened
+2021-04-30 12:04:53.806 [Test worker] INFO  com.company.CommandDictionary.ParseCommands(CommandDictionary.java:31) - all commands were parsed
+2021-04-30 12:04:53.807 [Test worker] INFO  com.company.CommandFabric.FirstCreateCommand(CommandFabric.java:36) - INIT class was added
+2021-04-30 12:04:53.807 [Test worker] INFO  com.company.commands.InitCommand.DoCommand(InitCommand.java:33) - INIT command was done
+2021-04-30 12:04:53.808 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - INIT class was taken
+2021-04-30 12:04:53.811 [Test worker] INFO  com.company.CommandFabric.FirstCreateCommand(CommandFabric.java:36) - WARD class was added
+2021-04-30 12:04:53.812 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - WARD class was taken
+2021-04-30 12:04:53.813 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - WARD class was taken
+2021-04-30 12:04:53.813 [Test worker] INFO  com.company.commands.WardCommand.DoCommand(WardCommand.java:26) - WARD command was done
+2021-04-30 12:04:53.814 [Test worker] INFO  com.company.CommandFabric.CreateCommand(CommandFabric.java:63) - WARD class was taken
+2021-04-30 12:04:53.815 [Test worker] INFO  TestWard.CommandStringCheck(TestWard.java:29) - TestWard Completed
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:36 - DRAW class was added
+2021-04-30 12:06:05 INFO  CommandFabric:36 - DRAW class was added
+2021-04-30 12:06:05 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:06:05 INFO  DrawCommand:30 - DRAW command was done
+2021-04-30 12:06:05 INFO  DrawCommand:30 - DRAW command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:36 - MOVE class was added
+2021-04-30 12:06:05 INFO  CommandFabric:36 - MOVE class was added
+2021-04-30 12:06:05 INFO  MoveCommand:43 - MOVE command was done
+2021-04-30 12:06:05 INFO  MoveCommand:43 - MOVE command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  MoveCommand:43 - MOVE command was done
+2021-04-30 12:06:05 INFO  MoveCommand:43 - MOVE command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:36 - TELEPORT class was added
+2021-04-30 12:06:05 INFO  CommandFabric:36 - TELEPORT class was added
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  TeleportCommand:29 - TELEPORT command was done
+2021-04-30 12:06:05 INFO  TeleportCommand:29 - TELEPORT command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  TeleportCommand:29 - TELEPORT command was done
+2021-04-30 12:06:05 INFO  TeleportCommand:29 - TELEPORT command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:36 - WARD class was added
+2021-04-30 12:06:05 INFO  CommandFabric:36 - WARD class was added
+2021-04-30 12:06:05 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:06:05 INFO  WardCommand:26 - WARD command was done
+2021-04-30 12:06:05 INFO  WardCommand:26 - WARD command was done
+2021-04-30 12:06:05 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:06:05 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:36 - DRAW class was added
+2021-04-30 12:07:26 INFO  CommandFabric:36 - DRAW class was added
+2021-04-30 12:07:26 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:07:26 INFO  DrawCommand:30 - DRAW command was done
+2021-04-30 12:07:26 INFO  DrawCommand:30 - DRAW command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - DRAW class was taken
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:36 - MOVE class was added
+2021-04-30 12:07:26 INFO  CommandFabric:36 - MOVE class was added
+2021-04-30 12:07:26 INFO  MoveCommand:43 - MOVE command was done
+2021-04-30 12:07:26 INFO  MoveCommand:43 - MOVE command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  MoveCommand:43 - MOVE command was done
+2021-04-30 12:07:26 INFO  MoveCommand:43 - MOVE command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - MOVE class was taken
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:36 - TELEPORT class was added
+2021-04-30 12:07:26 INFO  CommandFabric:36 - TELEPORT class was added
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  TeleportCommand:29 - TELEPORT command was done
+2021-04-30 12:07:26 INFO  TeleportCommand:29 - TELEPORT command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  TeleportCommand:29 - TELEPORT command was done
+2021-04-30 12:07:26 INFO  TeleportCommand:29 - TELEPORT command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - TELEPORT class was taken
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  RunLogGame:15 - Log Game start ...
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:24 - file was opened
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandDictionary:31 - all commands were parsed
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  CommandFabric:36 - INIT class was added
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  InitCommand:33 - INIT command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - INIT class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:36 - WARD class was added
+2021-04-30 12:07:26 INFO  CommandFabric:36 - WARD class was added
+2021-04-30 12:07:26 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:07:26 INFO  WardCommand:26 - WARD command was done
+2021-04-30 12:07:26 INFO  WardCommand:26 - WARD command was done
+2021-04-30 12:07:26 INFO  CommandFabric:63 - WARD class was taken
+2021-04-30 12:07:26 INFO  CommandFabric:63 - WARD class was taken

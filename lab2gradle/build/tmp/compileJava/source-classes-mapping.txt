@@ -6,16 +6,12 @@ com/company/RobotCommands.java
  com.company.RobotCommands
 com/company/RobotDrawer.java
  com.company.RobotDrawer
-com/company/RunLogGame.java
- com.company.RunLogGame
-com/company/Main.java
- com.company.Main
-com/company/CommandParser.java
- com.company.CommandParser
+com/company/GameField.java
+ com.company.GameField
 com/company/commands/WardCommand.java
  com.company.commands.WardCommand
-com/company/commands/InitCommand.java
- com.company.commands.InitCommand
+com/company/CommandDictionary.java
+ com.company.CommandDictionary
 com/company/GameDraw.java
  com.company.GameDraw
 com/company/commands/DrawCommand.java
@@ -24,11 +20,15 @@ com/company/CommandFabric.java
  com.company.CommandFabric
 com/company/commands/MoveCommand.java
  com.company.commands.MoveCommand
+com/company/commands/InitCommand.java
+ com.company.commands.InitCommand
 com/company/commands/Command.java
  com.company.commands.Command
-com/company/GameField.java
- com.company.GameField
-com/company/CommandDictionary.java
- com.company.CommandDictionary
 com/company/commands/TeleportCommand.java
  com.company.commands.TeleportCommand
+com/company/CommandParser.java
+ com.company.CommandParser
+com/company/RunLogGame.java
+ com.company.RunLogGame
+com/company/Main.java
+ com.company.Main
