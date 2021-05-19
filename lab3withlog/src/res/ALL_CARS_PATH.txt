@@ -1,0 +1,7 @@
+FORD_FOCUS=82,236,src/res/ford_focus.png,src/res/ford_focus_up.png,src/res/ford_focus_down.png,170,530,20,205,60,0
+BLACK_LAND_CRUISER=139,352,src/res/land_cruiser_black.png,src/res/land_cruiser_black_up.png,src/res/land_cruiser_black_down.png,125,475,20,168,70,0
+LAND_CRUISER=139,352,src/res/land_cruiser.png,src/res/land_cruiser_up.png,src/res/land_cruiser_down.png,125,475,20,168,70,0
+TRUCK=204,539,src/res/truck.png,src/res/truck.png,src/res/truck.png,80,400,0,103,100,0
+SUBARU=85,259,src/res/random_car2.png,src/res/random_car2_up.png,src/res/random_car2_down.png,170,530,30,208,80,0
+KIA=82,236,src/res/random_car1.png,src/res/random_car1_up.png,src/res/random_car1_down.png,170,522,20,198,55,0
+$

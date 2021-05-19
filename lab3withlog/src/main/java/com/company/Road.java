@@ -1,3 +1,5 @@
+package com.company;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -12,7 +14,10 @@ public class Road extends JPanel implements ActionListener, Runnable {
     Image img = new ImageIcon("src/res/game_road.png").getImage();
 
     Timer mainTimer = new Timer(40, this);
-    Player p = new Player();
+    CarsDictionary cars = new CarsDictionary();
+    Car tmp = cars.dictionary.get("FORD_FOCUS");
+    Player p = new Player(tmp.height, tmp.width, tmp.image_central, tmp.image_up,
+            tmp.image_down, tmp.MAX_TOP, tmp.MAX_BOTTOM, tmp.x, tmp.y, tmp.MAX_SPEED, tmp.MIN_SPEED);
 
     Thread EnemiesFactory = new Thread(this);
 
@@ -44,8 +49,8 @@ public class Road extends JPanel implements ActionListener, Runnable {
         g = (Graphics2D)g;
         g.drawImage(img,p.layer1,0,null);
         g.drawImage(img,p.layer2, 0, null);
-        g.drawImage(p.img, p.x, p.y, null);
-        double player_v = ( 200/(Player.MAX_V*2)) * p.v * 2;
+        g.drawImage(p.image, p.x, p.y, null);
+        double player_v = ( 200/(p.MAX_SPEED*2)) * p.speed * 2;
         Font font = new Font("Times New Roman",Font.ITALIC, 20);
         g.setFont(font);
         g.drawString("Speed: " + player_v + " km/h", 50, 30);

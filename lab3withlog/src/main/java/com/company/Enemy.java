@@ -1,3 +1,5 @@
+package com.company;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -20,6 +22,6 @@ public class Enemy {
     }
 
     public void move(){
-        x = x - road.p.v + v;
+        x = x - road.p.speed + v;
     }
 }
