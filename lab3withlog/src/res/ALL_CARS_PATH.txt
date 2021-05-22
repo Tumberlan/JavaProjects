@@ -1,7 +1,11 @@
-FORD_FOCUS=82,236,src/res/ford_focus.png,src/res/ford_focus_up.png,src/res/ford_focus_down.png,170,530,20,205,60,0
-BLACK_LAND_CRUISER=139,352,src/res/land_cruiser_black.png,src/res/land_cruiser_black_up.png,src/res/land_cruiser_black_down.png,125,475,20,168,70,0
-LAND_CRUISER=139,352,src/res/land_cruiser.png,src/res/land_cruiser_up.png,src/res/land_cruiser_down.png,125,475,20,168,70,0
-TRUCK=204,539,src/res/truck.png,src/res/truck.png,src/res/truck.png,80,400,0,103,100,0
-SUBARU=85,259,src/res/random_car2.png,src/res/random_car2_up.png,src/res/random_car2_down.png,170,530,30,208,80,0
-KIA=82,236,src/res/random_car1.png,src/res/random_car1_up.png,src/res/random_car1_down.png,170,522,20,198,55,0
+FORD_FOCUS=82,236,src/res/ford_focus.png,src/res/ford_focus_up.png,src/res/ford_focus_down.png,170,530,20,205,60,0,910,20,60,90
+BLACK_LAND_CRUISER=139,352,src/res/land_cruiser_black.png,src/res/land_cruiser_black_up.png,src/res/land_cruiser_black_down.png,125,470,20,168,70,0,800,20,50,78
+LAND_CRUISER=139,352,src/res/land_cruiser.png,src/res/land_cruiser_up.png,src/res/land_cruiser_down.png,125,470,20,168,70,0,800,20,50,80
+TRUCK=204,539,src/res/truck.png,src/res/truck.png,src/res/truck.png,90,400,0,103,100,0,600,0,30,50
+SUBARU=85,259,src/res/subaru.png,src/res/subaru_up.png,src/res/subaru_down.png,170,527,30,208,80,0,900,30,60,88
+KIA=82,236,src/res/kia.png,src/res/kia_up.png,src/res/kia_down.png,170,522,20,198,55,0,910,20,53,81
+VOLKSWAGEN_POLO=86,240,src/res/volkswagen_polo.png,src/res/volkswagen_polo_up.png,src/res/volkswagen_polo_down.png,170,530,20,205,60,0,910,20,56,84
+BENZ_TRUCK=140,323,src/res/benz_truck.png,src/res/benz_truck_up.png,src/res/benz_truck_down.png,130,478,20,168,70,0,800,20,50,78
+ROOT_TAXI=158,315,src/res/root_taxi.png,src/res/root_taxi_up.png,src/res/root_taxi_down.png,125,460,20,160,65,0,800,20,35,60
+BUS=168,556,src/res/bus.png,src/res/bus.png,src/res/bus.png,120,448,0,120,55,0,600,0,35,58
 $

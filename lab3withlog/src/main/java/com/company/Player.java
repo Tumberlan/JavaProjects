@@ -6,9 +6,10 @@ import java.awt.event.KeyEvent;
 public class Player extends Car {
 
 
-    public Player(int h, int w, Image img_c, Image img_u, Image img_d, int max_top,
-                  int max_bot, int x_c, int y_c, int max_speed, int min_speed) {
-        super(h, w, img_c, img_u, img_d, max_top, max_bot, x_c, y_c, max_speed, min_speed);
+    public Player(Car car) {
+        super(car.name,car.height, car.width, car.image_central, car.image_up, car.image_down,
+                car.MAX_TOP, car.MAX_BOTTOM, car.x, car.y, car.MAX_SPEED, car.MIN_SPEED, car.MAX_X,
+                car.MIN_X, car.random_number_top, car.random_number);
     }
 
     public Rectangle getRect(){
@@ -16,12 +17,11 @@ public class Player extends Car {
     }
 
 
+    int dx = 0;
     int dy = 0;
 
     int layer1 = 0;
     int layer2 = 1200;
-
-
 
     public void move(){
         way_length += speed;
@@ -41,6 +41,23 @@ public class Player extends Car {
                 y = MAX_BOTTOM;
             }
         }
+        if(speed >= 40) {
+            x += dx;
+            if(dx < 0){
+                speed -= 1;
+            }
+            if (x <= MIN_X) {
+                x = MIN_X;
+            }
+            if (x >= MAX_X) {
+                x = MAX_X;
+            }
+        }else{
+            x -= 10;
+            if (x <= MIN_X) {
+                x = MIN_X;
+            }
+        }
         if(layer2-speed <= 0){
             layer1 = 0;
             layer2 = 1200;
@@ -51,33 +68,54 @@ public class Player extends Car {
 
     public void keyPressed(KeyEvent event){
         int key_code = event.getKeyCode();
-        if(key_code == KeyEvent.VK_RIGHT){
-            acceleration = 1;
+        if(key_code == KeyEvent.VK_D){
+            dx = +10;
         }
-        if(key_code == KeyEvent.VK_LEFT){
-            acceleration = -1;
+        if(key_code == KeyEvent.VK_A){
+            dx = -10;
         }
-        if(key_code == KeyEvent.VK_UP){
-            if(y > MAX_TOP) {
-                image = image_up;
-            }
-            dy = -5;
-        }
-        if(key_code == KeyEvent.VK_DOWN){
-            if(y < MAX_BOTTOM) {
+        if(key_code == KeyEvent.VK_S){
+            if(y < MAX_BOTTOM && speed != 0) {
                 image = image_down;
             }
-            dy = +5;
+            if(speed < MAX_SPEED/4){
+                dy = +5;
+            }else if (speed < (MAX_SPEED/2+MAX_SPEED/4)){
+                dy = +10;
+            }else{
+                dy = +15;
+            }
+        }
+        if(key_code == KeyEvent.VK_W){
+            if(y > MAX_TOP && speed != 0) {
+                image = image_up;
+            }
+            if(speed < MAX_SPEED/4){
+                dy = -5;
+            }else if (speed < (MAX_SPEED/2+MAX_SPEED/4)){
+                dy = -10;
+            }else{
+                dy = -15;
+            }
+        }
+        if(key_code == KeyEvent.VK_SPACE){
+            acceleration = 1;
+        }
+        if(key_code == KeyEvent.VK_P){
+            acceleration = -1;
         }
     }
     public void keyReleased(KeyEvent event){
         int key_code = event.getKeyCode();
-        if (key_code == KeyEvent.VK_RIGHT || key_code == KeyEvent.VK_LEFT){
-            acceleration = 0;
+        if (key_code == KeyEvent.VK_D || key_code == KeyEvent.VK_A){
+            dx = 0;
         }
-        if(key_code == KeyEvent.VK_UP || key_code == KeyEvent.VK_DOWN){
+        if((key_code == KeyEvent.VK_W) || (key_code == KeyEvent.VK_S)){
             image = image_central;
             dy = 0;
+        }
+        if(key_code == KeyEvent.VK_SPACE || key_code == KeyEvent.VK_P){
+            acceleration = 0;
         }
     }
 }

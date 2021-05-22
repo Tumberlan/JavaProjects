@@ -3,6 +3,7 @@ package com.company;
 import java.awt.*;
 
 public class Car {
+    CarName.Names name;
     int height;
     int width;
     Image image;
@@ -13,16 +14,20 @@ public class Car {
     int MAX_BOTTOM;
     int MAX_SPEED;
     int MIN_SPEED;
+    int MAX_X;
+    int MIN_X;
 
     int x;
     int y;
     int speed;
     int acceleration;
     int way_length;
+    int random_number_top;
+    int random_number;
 
-
-    public Car(int h, int w, Image img_c, Image img_u, Image img_d, int max_top, int max_bot,
-               int x_c, int y_c,int max_speed, int min_speed){
+    public Car(CarName.Names str, int h, int w, Image img_c, Image img_u, Image img_d, int max_top, int max_bot,
+               int x_c, int y_c,int max_speed, int min_speed, int max_x, int min_x, int rand_num_top, int rand_num){
+        name = str;
         height = h;
         width = w;
         image_central = img_c;
@@ -38,5 +43,9 @@ public class Car {
         y = y_c;
         MAX_SPEED = max_speed;
         MIN_SPEED = min_speed;
+        MIN_X = min_x;
+        MAX_X = max_x;
+        random_number_top = rand_num_top;
+        random_number = rand_num;
     }
 }

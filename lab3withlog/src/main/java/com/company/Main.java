@@ -2,13 +2,15 @@ package com.company;
 
 import javax.swing.*;
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
 
-        JFrame f = new JFrame("Java F1");
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setSize(1200, 655);
-        f.add(new Road());
-        f.setVisible(true);
+        RaceLayout RL = new RaceLayout();
+        RL.StartLayout();
+
+
+        /*FirstLayout FL = new FirstLayout();
+        FL.StartLayout();*/
+
     }
 }
