@@ -5,15 +5,10 @@ import java.awt.event.KeyEvent;
 
 public class Player extends Car {
 
-
     public Player(Car car) {
-        super(car.name,car.height, car.width, car.image_central, car.image_up, car.image_down,
-                car.MAX_TOP, car.MAX_BOTTOM, car.x, car.y, car.MAX_SPEED, car.MIN_SPEED, car.MAX_X,
-                car.MIN_X, car.random_number_top, car.random_number);
-    }
-
-    public Rectangle getRect(){
-        return new Rectangle(x, y, width, height);
+        super(car.name,car.height, car.width, car.box_to_box_width, car.image_central, car.image_up,
+                car.image_down, car.MAX_TOP, car.MAX_BOTTOM, car.x, car.y, car.MAX_SPEED, car.MIN_SPEED,
+                car.MAX_X, car.MIN_X, car.random_number_top, car.random_number, car.free_space_h);
     }
 
 

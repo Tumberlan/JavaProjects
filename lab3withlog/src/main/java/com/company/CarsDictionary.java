@@ -22,14 +22,15 @@ public class CarsDictionary {
                 String[] sub_str = value.split(parse_symbol);
                 String parse_stat_symbol = ",";
                 String[] sub_stat_str = sub_str[1].split(parse_stat_symbol);
-                Car new_car = new Car(CN.GetName(sub_str[0]),Integer.parseInt(sub_stat_str[0]),Integer.parseInt(sub_stat_str[1]),
-                        new ImageIcon(sub_stat_str[2]).getImage(),new ImageIcon(sub_stat_str[3]).getImage(),
-                        new ImageIcon(sub_stat_str[4]).getImage(),Integer.parseInt(sub_stat_str[5]),
-                        Integer.parseInt(sub_stat_str[6]), Integer.parseInt(sub_stat_str[7]),
-                        Integer.parseInt(sub_stat_str[8]),Integer.parseInt(sub_stat_str[9]),
-                        Integer.parseInt(sub_stat_str[10]), Integer.parseInt(sub_stat_str[11]),
-                        Integer.parseInt(sub_stat_str[12]), Integer.parseInt(sub_stat_str[13]),
-                        Integer.parseInt(sub_stat_str[14]));
+                Car new_car = new Car(CN.GetName(sub_str[0]),Integer.parseInt(sub_stat_str[0]),
+                        Integer.parseInt(sub_stat_str[1]),Integer.parseInt(sub_stat_str[2]),
+                        new ImageIcon(sub_stat_str[3]).getImage(),new ImageIcon(sub_stat_str[4]).getImage(),
+                        new ImageIcon(sub_stat_str[5]).getImage(),Integer.parseInt(sub_stat_str[6]),
+                        Integer.parseInt(sub_stat_str[7]), Integer.parseInt(sub_stat_str[8]),
+                        Integer.parseInt(sub_stat_str[9]),Integer.parseInt(sub_stat_str[10]),
+                        Integer.parseInt(sub_stat_str[11]), Integer.parseInt(sub_stat_str[12]),
+                        Integer.parseInt(sub_stat_str[13]), Integer.parseInt(sub_stat_str[14]),
+                        Integer.parseInt(sub_stat_str[15]), Integer.parseInt(sub_stat_str[16]));
                 dictionary.put(sub_str[0], new_car);
                 value = reader.readLine();
             }

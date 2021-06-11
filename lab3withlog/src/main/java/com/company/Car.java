@@ -6,6 +6,7 @@ public class Car {
     CarName.Names name;
     int height;
     int width;
+    int box_to_box_width;
     Image image;
     Image image_central;
     Image image_up;
@@ -24,12 +25,16 @@ public class Car {
     int way_length;
     int random_number_top;
     int random_number;
+    int free_space_h;
+    int priority;
 
-    public Car(CarName.Names str, int h, int w, Image img_c, Image img_u, Image img_d, int max_top, int max_bot,
-               int x_c, int y_c,int max_speed, int min_speed, int max_x, int min_x, int rand_num_top, int rand_num){
+    public Car(CarName.Names str, int h, int w, int btb_w, Image img_c, Image img_u, Image img_d,
+               int max_top, int max_bot, int x_c, int y_c,int max_speed, int min_speed, int max_x,
+               int min_x, int rand_num_top, int rand_num, int fsh){
         name = str;
         height = h;
         width = w;
+        box_to_box_width = btb_w;
         image_central = img_c;
         image_up = img_u;
         image_down = img_d;
@@ -47,5 +52,10 @@ public class Car {
         MAX_X = max_x;
         random_number_top = rand_num_top;
         random_number = rand_num;
+        free_space_h = fsh;
+        priority = 0;
     }
+     public Integer getPriority(){
+        return priority;
+     }
 }
