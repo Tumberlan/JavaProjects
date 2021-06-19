@@ -7,8 +7,6 @@ public class Main{
 
         RaceLayout RL = new RaceLayout();
         RL.StartLayout();
-
-
         /*FirstLayout FL = new FirstLayout();
         FL.StartLayout();*/
 

@@ -1,22 +1,35 @@
 package com.company;
 
-import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class Player extends Car {
 
-    public Player(Car car) {
+    public Player(Car car, String name) {
         super(car.name,car.height, car.width, car.box_to_box_width, car.image_central, car.image_up,
                 car.image_down, car.MAX_TOP, car.MAX_BOTTOM, car.x, car.y, car.MAX_SPEED, car.MIN_SPEED,
                 car.MAX_X, car.MIN_X, car.random_number_top, car.random_number, car.free_space_h);
+        carName = name;
     }
 
 
     int dx = 0;
     int dy = 0;
+    int conditionIdx = 0;
 
     int layer1 = 0;
     int layer2 = 1200;
+    String carName;
+
+    public byte[] GiveChanges(){
+        byte[] tmp;
+        tmp = new byte[5];
+        tmp[0] = (byte)x;
+        tmp[1] = (byte)y;
+        tmp[2] = (byte)dx;
+        tmp[3] = (byte)dy;
+        tmp[4] = (byte)conditionIdx;
+        return tmp;
+    }
 
     public void move(){
         way_length += speed;
@@ -72,6 +85,7 @@ public class Player extends Car {
         if(key_code == KeyEvent.VK_S){
             if(y < MAX_BOTTOM && speed != 0) {
                 image = image_down;
+                conditionIdx = 2;
             }
             if(speed < MAX_SPEED/4){
                 dy = +5;
@@ -84,6 +98,7 @@ public class Player extends Car {
         if(key_code == KeyEvent.VK_W){
             if(y > MAX_TOP && speed != 0) {
                 image = image_up;
+                conditionIdx = 1;
             }
             if(speed < MAX_SPEED/4){
                 dy = -5;
@@ -107,6 +122,7 @@ public class Player extends Car {
         }
         if((key_code == KeyEvent.VK_W) || (key_code == KeyEvent.VK_S)){
             image = image_central;
+            conditionIdx = 0;
             dy = 0;
         }
         if(key_code == KeyEvent.VK_SPACE || key_code == KeyEvent.VK_P){

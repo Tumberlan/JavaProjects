@@ -33,6 +33,6 @@ public class Enemy extends Car{
     }
 
     public void move(){
-        x = x - road.p.speed + speed;
+        x = x - road.player.speed + speed;
     }
 }

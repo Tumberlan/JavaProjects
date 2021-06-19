@@ -9,36 +9,55 @@ import java.awt.event.KeyEvent;
 
 public class Road extends JPanel implements ActionListener{
     Image img = new ImageIcon("src/res/game_road.png").getImage();
-    RoadLogic RL = new RoadLogic();
+    RoadLogic RL;
     Timer mainTimer = new Timer(40, this);
+    int playerType;
 
-    public Road(){
+    public Road(int pT, RoadLogic rl){
+        RL = rl;
+        playerType = pT;
         mainTimer.start();
-        addKeyListener(new MyKeyAdapter());
+        if(playerType == 1) {
+            addKeyListener(new MyKeyAdapter());
+        }else{
+            addKeyListener(new MyKeyAdapter2());
+        }
         setFocusable(true);
     }
 
     private class MyKeyAdapter extends KeyAdapter{
-        public void keyPressed(KeyEvent event){
-            RL.p.keyPressed(event);
-        }
-        public void keyReleased(KeyEvent event){
-            RL.p.keyReleased(event);
+            public void keyPressed (KeyEvent event){
+                RL.player.keyPressed(event);
+            }
+            public void keyReleased (KeyEvent event){
+                RL.player.keyReleased(event);
+            }
+
+    }
+    private class MyKeyAdapter2 extends KeyAdapter{
+        public void keyTyped(KeyEvent event){
+            RL.player2.keyTyped(event);
         }
     }
 
     public void paint(Graphics g){
         g = (Graphics2D)g;
-        g.drawImage(img,RL.p.layer1,0,null);
-        g.drawImage(img,RL.p.layer2, 0, null);
-        double player_v = ( 200/(RL.p.MAX_SPEED*2)) * RL.p.speed * 2;
-        Font font = new Font("Times New Roman",Font.ITALIC, 20);
-        g.setFont(font);
-        g.drawString("Speed: " + player_v + " km/h", 50, 30);
+        g.drawImage(img, RL.player.layer1, 0, null);
+        g.drawImage(img, RL.player.layer2, 0, null);
+        if(playerType == 1) {
+            double player_v = (200 / (RL.player.MAX_SPEED * 2)) * RL.player.speed * 2;
+            Font font = new Font("Times New Roman", Font.ITALIC, 20);
+            g.setFont(font);
+            g.drawString("Speed: " + player_v + " km/h", 50, 30);
+        }else {
+            Font font = new Font("Times New Roman", Font.ITALIC, 20);
+            g.setFont(font);
+            g.drawString("Car Type: " + RL.player2.carName + "  Line: " +
+                    RL.player2.lineNumber, 350, 30);
+        }
         RL.TmpRoadChanges();
         DrawPriorityLine(g);
     }
-
 
     private void TestCollisionsWithEnemies(){
         if(RL.TestCollisionsWithEnemies()){
@@ -51,16 +70,17 @@ public class Road extends JPanel implements ActionListener{
         g = (Graphics2D)g;
         RL.SortEnemies();
         boolean player_drawn = false;
-        for (Enemy enemy:RL.enemyList){
-            if(enemy.priority > RL.p.priority && !player_drawn){
-                g.drawImage(RL.p.image, RL.p.x, RL.p.y, null);
+        for (Enemy enemy : RL.enemyList) {
+            if (enemy.priority > RL.player.priority && !player_drawn) {
+                g.drawImage(RL.player.image, RL.player.x, RL.player.y, null);
                 player_drawn = true;
             }
             g.drawImage(enemy.image, enemy.x, enemy.y, null);
         }
-        if(!player_drawn){
-            g.drawImage(RL.p.image, RL.p.x, RL.p.y, null);
+        if (!player_drawn) {
+            g.drawImage(RL.player.image, RL.player.x, RL.player.y, null);
         }
+
     }
 
     @Override
