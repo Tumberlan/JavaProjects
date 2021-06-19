@@ -11,18 +11,13 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.Random;
 
-public class Road extends JPanel implements ActionListener, Runnable {
-    Image img = new ImageIcon("src/res/game_road.png").getImage();
+public class RoadLogic implements Runnable {
     CarIntersection CI = new CarIntersection();
-
     public final int NORMAL_SPEED = 30;
-    Timer mainTimer = new Timer(40, this);
     CarsDictionary cars = new CarsDictionary();
     String carNameStr = "SUBARU";
     Car tmp_car = cars.dictionary.get(carNameStr);
-
     Player p = new Player(tmp_car);
-
     Thread EnemiesFactory = new Thread(this);
 
     //Thread Audio = new Thread(new AudioThread());
@@ -31,24 +26,11 @@ public class Road extends JPanel implements ActionListener, Runnable {
     ArrayList<Player> playerList = new ArrayList<Player>();
 
 
-    public Road(){
+    public RoadLogic(){
         playerList.add(p);
-        mainTimer.start();
         EnemiesFactory.start();
         //  Audio.start();
-        addKeyListener(new MyKeyAdapter());
-        setFocusable(true);
     }
-
-    private class MyKeyAdapter extends KeyAdapter{
-        public void keyPressed(KeyEvent event){
-            p.keyPressed(event);
-        }
-        public void keyReleased(KeyEvent event){
-            p.keyReleased(event);
-        }
-    }
-
 
     public void FixEnemyCollisions(){
         Random random = new Random();
@@ -124,16 +106,8 @@ public class Road extends JPanel implements ActionListener, Runnable {
 
     }
 
-
-    public void paint(Graphics g){
-        g = (Graphics2D)g;
-        g.drawImage(img,p.layer1,0,null);
-        g.drawImage(img,p.layer2, 0, null);
+    public void TmpRoadChanges(){
         GetPriority(p);
-        double player_v = ( 200/(p.MAX_SPEED*2)) * p.speed * 2;
-        Font font = new Font("Times New Roman",Font.ITALIC, 20);
-        g.setFont(font);
-        g.drawString("Speed: " + player_v + " km/h", 50, 30);
         Iterator<Enemy> iterator = enemyList.iterator();
         while (iterator.hasNext()){
             Enemy enemy = iterator.next();
@@ -143,7 +117,6 @@ public class Road extends JPanel implements ActionListener, Runnable {
                 GetPriority(enemy);
             }
         }
-        DrawPriorityLine(g);
     }
 
     private void MoveEnemies(){
@@ -155,15 +128,15 @@ public class Road extends JPanel implements ActionListener, Runnable {
     }
 
 
-    private void TestCollisionsWithEnemies(){
+    private boolean TestCollisionsWithEnemies(){
         Iterator<Enemy> iterator = enemyList.iterator();
         while (iterator.hasNext()){
             Enemy enemy = iterator.next();
             if(CI.CarIntersectionQ(p,enemy,false)){
-                JOptionPane.showMessageDialog(null, "YOU LOST");
-                System.exit(1);
+                return true;
             }
         }
+        return false;
     }
 
     public String getEnemyCar(Player p){
@@ -253,31 +226,14 @@ public class Road extends JPanel implements ActionListener, Runnable {
         car.priority = car.y + car.height;
     }
 
-    public void DrawPriorityLine(Graphics g){
-        g = (Graphics2D)g;
-        Collections.sort(enemyList,new PriorityComparator());
-        boolean player_drawn = false;
-        for (Enemy enemy:enemyList){
-            if(enemy.priority > p.priority && !player_drawn){
-                g.drawImage(p.image, p.x, p.y, null);
-                player_drawn = true;
-            }
-            g.drawImage(enemy.image, enemy.x, enemy.y, null);
-        }
-        if(!player_drawn){
-            g.drawImage(p.image, p.x, p.y, null);
-        }
-    }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
+    public void RoadLive(){
         p.move();
         MoveEnemies();
-        //
         FixEnemyCollisions();
-        repaint();
         TestCollisionsWithEnemies();
     }
+
 
     public void run(){
         while (true){
