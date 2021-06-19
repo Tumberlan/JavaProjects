@@ -9,7 +9,7 @@ public class Enemy extends Car{
     public int wait_for_boost_time;
     public int MAX_WANTED_SPEED;
 
-    public Enemy(Car car, int x_coord, int y_coord, int speed_value, Road r) {
+    public Enemy(Car car, int x_coord, int y_coord, int speed_value, RoadLogic r) {
         super(car.name,car.height, car.width, car.box_to_box_width, car.image_central, car.image_up,
                 car.image_down, car.MAX_TOP, car.MAX_BOTTOM, car.x, car.y, car.MAX_SPEED, car.MIN_SPEED,
                 car.MAX_X, car.MIN_X, car.random_number_top, car.random_number, car.free_space_h);
@@ -23,7 +23,7 @@ public class Enemy extends Car{
         MAX_WANTED_SPEED = (MAX_SPEED*4)/5;
     }
 
-    Road road;
+    RoadLogic road;
 
     public Rectangle getRect(){
         return new Rectangle(x, y, width, height);

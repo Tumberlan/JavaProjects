@@ -1,11 +1,5 @@
 package com.company;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -119,7 +113,7 @@ public class RoadLogic implements Runnable {
         }
     }
 
-    private void MoveEnemies(){
+    public void MoveEnemies(){
         Iterator<Enemy> iterator = enemyList.iterator();
         while (iterator.hasNext()){
             Enemy enemy = iterator.next();
@@ -128,7 +122,7 @@ public class RoadLogic implements Runnable {
     }
 
 
-    private boolean TestCollisionsWithEnemies(){
+    public boolean TestCollisionsWithEnemies(){
         Iterator<Enemy> iterator = enemyList.iterator();
         while (iterator.hasNext()){
             Enemy enemy = iterator.next();
@@ -226,12 +220,14 @@ public class RoadLogic implements Runnable {
         car.priority = car.y + car.height;
     }
 
+    public void SortEnemies(){
+        Collections.sort(enemyList,new PriorityComparator());
+    }
 
     public void RoadLive(){
         p.move();
         MoveEnemies();
         FixEnemyCollisions();
-        TestCollisionsWithEnemies();
     }
 
 
