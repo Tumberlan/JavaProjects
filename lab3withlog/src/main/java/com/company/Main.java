@@ -1,12 +1,27 @@
 package com.company;
 
 import javax.swing.*;
+import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
         boolean online = false;
         boolean isDriver = true;
-        online = true;
+        Scanner scanner = new Scanner(System.in);
+        String command = scanner.nextLine();
+        if(command.equals("online")){
+            online = true;
+            command = scanner.nextLine();
+            if(command.equals("drive")){
+                isDriver = true;
+            }
+            if(command.equals("spam")) {
+                isDriver = false;
+            }
+        }
+        if(command.equals("desktop")){
+            online = false;
+        }
         if(online) {
             if(isDriver) {
                 Multiplayer MP = new Multiplayer();
