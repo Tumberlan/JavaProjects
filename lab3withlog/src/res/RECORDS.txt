@@ -1,4 +1,6 @@
+Speedy?=27
 death racer=16
+=12
 me=10
 rrr=10
 Shumaher=10

@@ -89,7 +89,6 @@ public class Multiplayer extends Thread{
                     roadLogic.deactivateFabric = false;
                     roadLogic.isP2Active = false;
                     isGo = false;
-                    e.printStackTrace();
                 }
             }
         }
@@ -112,7 +111,8 @@ public class Multiplayer extends Thread{
         public void run(){
             RaceLayout RL = new RaceLayout();
             RL.StartLayout(2,roadLogic, pName);
-            while (true) {
+            boolean isGo = true;
+            while (isGo){
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
@@ -121,7 +121,7 @@ public class Multiplayer extends Thread{
                 try {
                     send();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    isGo = false;
                 }
             }
         }
@@ -154,7 +154,6 @@ public class Multiplayer extends Thread{
                     roadLogic.deactivateFabric = false;
                     roadLogic.isP2Active = false;
                     isGo = false;
-                    e.printStackTrace();
                 }
             }
         }
@@ -176,7 +175,8 @@ public class Multiplayer extends Thread{
         }
 
         public void run(){
-            while (true){
+            boolean isGo = true;
+            while (isGo){
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
@@ -185,11 +185,10 @@ public class Multiplayer extends Thread{
                 try {
                     recieve();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    isGo = false;
                 }
             }
         }
     }
-
-
+    
 }
