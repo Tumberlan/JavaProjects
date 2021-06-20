@@ -22,7 +22,7 @@ public class Multiplayer extends Thread{
     PlayerOneRecieve playerOneRecieve;
     PlayerTwoRecieve playerTwoRecieve;
 
-    public void InitServer(String new_ip, int new_port){
+    public void InitServer(String new_ip, int new_port,String name){
         ip = new_ip;
         port = new_port;
         try{
@@ -31,7 +31,7 @@ public class Multiplayer extends Thread{
             socket = serverSocket.accept();
             dos = new DataOutputStream(socket.getOutputStream());
             dis = new DataInputStream(socket.getInputStream());
-            playerOneSend = new PlayerOneSend();
+            playerOneSend = new PlayerOneSend(name);
             playerOneSend.start();
             playerOneRecieve = new PlayerOneRecieve();
             playerOneRecieve.start();
@@ -42,14 +42,14 @@ public class Multiplayer extends Thread{
         }
     }
 
-    public void connect(String new_ip, int new_port){
+    public void connect(String new_ip, int new_port, String name){
         ip = new_ip;
         port = new_port;
         try{
             socket=new Socket(ip,port);
             dos = new DataOutputStream(socket.getOutputStream());
             dis = new DataInputStream(socket.getInputStream());
-            playerTwoSend = new PlayerTwoSend();
+            playerTwoSend = new PlayerTwoSend(name);
             playerTwoSend.start();
             playerTwoRecieve = new PlayerTwoRecieve();
             playerTwoRecieve.start();
@@ -62,6 +62,10 @@ public class Multiplayer extends Thread{
 
 
     private class PlayerOneSend extends Thread{
+        String pName;
+        private PlayerOneSend(String name){
+            pName = name;
+        }
         private void send() throws IOException {
             int[] tmp = roadLogic.player.GiveChanges();
             for(int i = 0; i < 6;i++){
@@ -72,7 +76,7 @@ public class Multiplayer extends Thread{
         public void run(){
             boolean isGo = true;
             RaceLayout RL = new RaceLayout();
-            RL.StartLayout(1, roadLogic);
+            RL.StartLayout(1, roadLogic, pName);
             while (isGo){
                 try {
                     Thread.sleep(10);
@@ -92,6 +96,10 @@ public class Multiplayer extends Thread{
     }
 
     private class PlayerTwoSend extends Thread{
+        String pName;
+        private PlayerTwoSend(String name){
+            pName = name;
+        }
         private void send() throws IOException {
             int[] tmp = roadLogic.player2.GiveChanges();
             for(int i = 0; i < 3;i++){
@@ -103,7 +111,7 @@ public class Multiplayer extends Thread{
 
         public void run(){
             RaceLayout RL = new RaceLayout();
-            RL.StartLayout(2,roadLogic);
+            RL.StartLayout(2,roadLogic, pName);
             while (true) {
                 try {
                     Thread.sleep(10);

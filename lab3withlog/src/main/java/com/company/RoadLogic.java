@@ -171,9 +171,6 @@ public class RoadLogic implements Runnable {
     }
 
 
-
-
-
     public void GetPriority(Car car){
         car.priority = car.y + car.height;
     }

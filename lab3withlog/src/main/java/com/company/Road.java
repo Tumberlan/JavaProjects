@@ -6,17 +6,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 
 public class Road extends JPanel implements ActionListener{
     Image img = new ImageIcon("src/res/game_road.png").getImage();
     RoadLogic RL;
     Timer mainTimer = new Timer(40, this);
     int playerType;
+    String pName;
 
-    public Road(int pT, RoadLogic rl){
+    public Road(int pT, RoadLogic rl, String name){
         RL = rl;
         playerType = pT;
         mainTimer.start();
+        pName = name;
         if(playerType == 1) {
             addKeyListener(new MyKeyAdapter());
         }else{
@@ -50,6 +53,7 @@ public class Road extends JPanel implements ActionListener{
             Font font = new Font("Times New Roman", Font.ITALIC, 20);
             g.setFont(font);
             g.drawString("Speed: " + player_v + " km/h", 50, 30);
+            g.drawString("Your Score: "+RL.player.KmRes/2+" km", 300,30);
         }else {
             Font font = new Font("Times New Roman", Font.ITALIC, 20);
             g.setFont(font);
@@ -60,10 +64,12 @@ public class Road extends JPanel implements ActionListener{
         DrawPriorityLine(g);
     }
 
-    private void TestCollisionsWithEnemies(){
+    private void TestCollisionsWithEnemies() throws IOException {
         if(RL.TestCollisionsWithEnemies()){
             if(playerType == 1) {
                 JOptionPane.showMessageDialog(null, "YOU LOST");
+                RecordTable RT = new RecordTable();
+                RT.refreshRecordTable(pName, RL.player.KmRes/2);
                 System.exit(1);
             }else {
                 JOptionPane.showMessageDialog(null, "YOU WON!");
@@ -93,7 +99,11 @@ public class Road extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         RL.RoadLive();
         repaint();
-        TestCollisionsWithEnemies();
+        try {
+            TestCollisionsWithEnemies();
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
     }
 
 }

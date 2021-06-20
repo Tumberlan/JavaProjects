@@ -11,7 +11,7 @@ public class Player extends Car {
         carName = name;
     }
 
-
+    int KmRes = 0;
     int dx = 0;
     int dy = 0;
     int conditionIdx = 0;
@@ -69,6 +69,7 @@ public class Player extends Car {
         if(layer2-speed <= 0){
             layer1 = 0;
             layer2 = 1200;
+            KmRes++;
         }
         layer1 -= speed;
         layer2 -= speed;
