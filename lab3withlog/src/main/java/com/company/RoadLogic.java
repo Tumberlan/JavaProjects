@@ -17,7 +17,11 @@ public class RoadLogic implements Runnable {
     Image pDown;
     Player2 player2;
     boolean isP2Active = false;
-
+    boolean deactivateFabric = false;
+    int index = 0;
+    int speed = 0;
+    int enY = 0;
+    boolean spammer = false;
     //Thread Audio = new Thread(new AudioThread());
 
     ArrayList<Enemy> enemyList = new ArrayList<Enemy>();
@@ -32,15 +36,15 @@ public class RoadLogic implements Runnable {
         pDown = player.image_down;
     }
     public void AddPlayer2(){
-        player2 = new Player2();
+        player2 = new Player2(cars,player.carName);
         isP2Active = true;
     }
-    public RoadLogic(boolean two){
+    public RoadLogic(boolean isOnline){
         AddPlayer("SUBARU");
-        if(two){
-            AddPlayer2();
-        }
         EnemiesFactory.start();
+        if(isOnline){
+            deactivateFabric = true;
+        }
         //  Audio.start();
     }
 
@@ -166,103 +170,9 @@ public class RoadLogic implements Runnable {
         return false;
     }
 
-    public String getEnemyCar(int numb){
-        Random random = new Random();
-        int number;
-        if(numb < 0) {
-            number = random.nextInt(9);
-        }else{
-            number = numb;
-        }
-        switch (number) {
-            case 0 -> {
-                String tmp = "SUBARU";
-                if (player.carName.equals(tmp)) {
-                    return "VOLKSWAGEN_POLO";
-                }
-                return "SUBARU";
-            }
-            case 1 -> {
-                String tmp = "KIA";
-                if (player.carName.equals(tmp)) {
-                    return "VOLKSWAGEN_POLO";
-                }
-                return "KIA";
-            }
-            case 2 -> {
-                String tmp = "LAND_CRUISER";
-                if (player.carName.equals(tmp)) {
-                    return "VOLKSWAGEN_POLO";
-                }
-                return "LAND_CRUISER";
-            }
-            case 3 -> {
-                String tmp = "BLACK_LAND_CRUISER";
-                if (player.carName.equals(tmp)) {
-                    return "VOLKSWAGEN_POLO";
-                }
-                return "BLACK_LAND_CRUISER";
-            }
-            case 4 -> {
-                String tmp = "FORD_FOCUS";
-                if (player.carName.equals(tmp)) {
-                    return "VOLKSWAGEN_POLO";
-                }
-                return "FORD_FOCUS";
-            }
-            case 5 -> {
-                String tmp = "BENZ_TRUCK";
-                if (player.carName.equals(tmp)) {
-                    return "VOLKSWAGEN_POLO";
-                }
-                return "BENZ_TRUCK";
-            }
-            case 6 -> {
-                String tmp = "BUS";
-                if (player.carName.equals(tmp)) {
-                    return "VOLKSWAGEN_POLO";
-                }
-                return "BUS";
-            }
-            case 7 -> {
-                String tmp = "ROOT_TAXI";
-                if (player.carName.equals(tmp)) {
-                    return "VOLKSWAGEN_POLO";
-                }
-                return "ROOT_TAXI";
-            }
-            case 8 ->{
-                String tmp = "TRUCK";
-                if (player.carName.equals(tmp)) {
-                    return "VOLKSWAGEN_POLO";
-                }
-                return "TRUCK";
-            }
-        }
-        return null;
-    }
 
-    public int GetEnemyY(Car enemyCar, int lineN){
-        Random random = new Random();
-        int number;
-        if(lineN == 0){
-            number = random.nextInt(3);
-        }else{
-            number = lineN-1;
-        }
-        switch (number){
-            case 0->{
-                return enemyCar.MAX_TOP + random.nextInt(enemyCar.random_number_top);
-            }
-            case 1->{
-                return enemyCar.MAX_TOP+120 + random.nextInt(enemyCar.random_number);
-            }
-            case 2->{
-                return enemyCar.MAX_TOP+270 + random.nextInt(enemyCar.random_number);
-            }
-        }
-        return 0;
-    }
+
+
 
     public void GetPriority(Car car){
         car.priority = car.y + car.height;
@@ -278,6 +188,13 @@ public class RoadLogic implements Runnable {
         FixEnemyCollisions();
     }
 
+    public void addEnemy(){
+        if(spammer) {
+            Car enemy_car = cars.dictionary.get(cars.getEnemyCar(player.carName, index));
+            enemyList.add(new Enemy(enemy_car, 2000, enY, speed, this));
+            spammer = false;
+        }
+    }
 
     public void run(){
         while (true){
@@ -285,16 +202,19 @@ public class RoadLogic implements Runnable {
             try {
                 if(isP2Active){
                     if(player2.spamCar) {
-                        Car enemy_car = cars.dictionary.get(getEnemyCar(player2.carNameIdx));
-                        enemyList.add(new Enemy(enemy_car, 2000, GetEnemyY(enemy_car,player2.lineNumber),
-                                random.nextInt(20) + 20, this));
+                        enemyList.add(new Enemy(player2.created_car, 2000,
+                                player2.enemyY, player2.speed_v, this));
                         player2.spamCar = false;
                     }
                 }else {
-                    Thread.sleep(random.nextInt(4000) + 1000);
-                    Car enemy_car = cars.dictionary.get(getEnemyCar(-1));
-                    enemyList.add(new Enemy(enemy_car, 2000, GetEnemyY(enemy_car,0),
-                            random.nextInt(20) + 20, this));
+                    if(!deactivateFabric) {
+                        Thread.sleep(random.nextInt(4000) + 1000);
+                        Car enemy_car = cars.dictionary.get(cars.getEnemyCar(player.carName, -1));
+                        enemyList.add(new Enemy(enemy_car, 2000, cars.GetEnemyY(enemy_car, 0),
+                                random.nextInt(20) + 20, this));
+                    }else{
+                        addEnemy();
+                    }
                 }
             }catch (InterruptedException e){
                 e.printStackTrace();

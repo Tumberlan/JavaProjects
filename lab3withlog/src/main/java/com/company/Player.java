@@ -20,14 +20,14 @@ public class Player extends Car {
     int layer2 = 1200;
     String carName;
 
-    public byte[] GiveChanges(){
-        byte[] tmp;
-        tmp = new byte[5];
-        tmp[0] = (byte)x;
-        tmp[1] = (byte)y;
-        tmp[2] = (byte)dx;
-        tmp[3] = (byte)dy;
-        tmp[4] = (byte)conditionIdx;
+    public int[] GiveChanges(){
+        int[] tmp = new int[6];
+        tmp[0] = x;
+        tmp[1] = y;
+        tmp[2] = dx;
+        tmp[3] = dy;
+        tmp[4] = conditionIdx;
+        tmp[5] = acceleration;
         return tmp;
     }
 

@@ -6,11 +6,10 @@ public class RaceLayout {
     JFrame f = new JFrame("Java F1");
     public static int WINDOW_WIDTH = 1200;
     public static int WINDOW_HEIGHT = 655;
-    RoadLogic RL = new RoadLogic(false);
-    public void StartLayout(){
+    public void StartLayout(int number, RoadLogic RL){
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
-        f.add(new Road(1, RL));
+        f.add(new Road(number, RL));
         f.setVisible(true);
     }
 }

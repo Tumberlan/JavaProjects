@@ -21,22 +21,23 @@ public class Road extends JPanel implements ActionListener{
             addKeyListener(new MyKeyAdapter());
         }else{
             addKeyListener(new MyKeyAdapter2());
+            RL.AddPlayer2();
         }
         setFocusable(true);
     }
 
     private class MyKeyAdapter extends KeyAdapter{
-            public void keyPressed (KeyEvent event){
-                RL.player.keyPressed(event);
-            }
-            public void keyReleased (KeyEvent event){
-                RL.player.keyReleased(event);
-            }
+        public void keyPressed (KeyEvent event){
+            RL.player.keyPressed(event);
+        }
+        public void keyReleased (KeyEvent event){
+            RL.player.keyReleased(event);
+        }
 
     }
     private class MyKeyAdapter2 extends KeyAdapter{
-        public void keyTyped(KeyEvent event){
-            RL.player2.keyTyped(event);
+        public void keyPressed (KeyEvent event){
+            RL.player2.keyPressed(event);
         }
     }
 
@@ -53,7 +54,7 @@ public class Road extends JPanel implements ActionListener{
             Font font = new Font("Times New Roman", Font.ITALIC, 20);
             g.setFont(font);
             g.drawString("Car Type: " + RL.player2.carName + "  Line: " +
-                    RL.player2.lineNumber, 350, 30);
+                    RL.player2.lineNumber, 500, 30);
         }
         RL.TmpRoadChanges();
         DrawPriorityLine(g);
@@ -61,8 +62,13 @@ public class Road extends JPanel implements ActionListener{
 
     private void TestCollisionsWithEnemies(){
         if(RL.TestCollisionsWithEnemies()){
-            JOptionPane.showMessageDialog(null, "YOU LOST");
-            System.exit(1);
+            if(playerType == 1) {
+                JOptionPane.showMessageDialog(null, "YOU LOST");
+                System.exit(1);
+            }else {
+                JOptionPane.showMessageDialog(null, "YOU WON!");
+                System.exit(1);
+            }
         }
     }
 

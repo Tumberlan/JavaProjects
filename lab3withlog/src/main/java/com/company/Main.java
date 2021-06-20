@@ -5,8 +5,8 @@ import javax.swing.*;
 public class Main{
     public static void main(String[] args) {
 
-        RaceLayout RL = new RaceLayout();
-        RL.StartLayout();
+        Multiplayer MP = new Multiplayer();
+        MP.InitServer("localhost", 22222);
         /*FirstLayout FL = new FirstLayout();
         FL.StartLayout();*/
 
