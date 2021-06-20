@@ -24,7 +24,6 @@ public class RecordTable {
             while(value != null){
                 String parse_symbol = "=";
                 String[] sub_str = value.split(parse_symbol);
-                System.out.println(sub_str[0] + " " + sub_str[1]);
                 Record record = new Record(sub_str[0], sub_str[1]);
                 RecordList.add(record);
                 value = reader.readLine();
@@ -41,8 +40,6 @@ public class RecordTable {
                 }
                 ps.println(record.name+"="+record.value);
             }
-
-
 
         }catch (IOException e){
             e.printStackTrace();
