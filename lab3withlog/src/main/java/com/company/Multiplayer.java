@@ -138,8 +138,6 @@ public class Multiplayer extends Thread{
             roadLogic.speed = tmp[1];
             roadLogic.enY = tmp[2];
             roadLogic.spammer = spammed;
-            System.out.println(roadLogic.index+" "+roadLogic.speed+" "+
-                    roadLogic.enY+" "+roadLogic.spammer);
 
         }
         public void run(){

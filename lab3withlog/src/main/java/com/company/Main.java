@@ -30,7 +30,7 @@ public class Main{
         if(online) {
             if(isDriver) {
                 Multiplayer MP = new Multiplayer();
-                MP.InitServer("25.70.47.47", 22222, name);
+                MP.InitServer("localhost", 22222, name);
             }else{
                 Multiplayer MP = new Multiplayer();
                 MP.connect("localhost", 22222, name);
