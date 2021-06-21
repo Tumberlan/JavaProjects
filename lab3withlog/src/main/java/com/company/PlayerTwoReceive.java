@@ -8,6 +8,7 @@ public class PlayerTwoReceive extends Thread {
     RoadLogic roadLogic;
     DataInputStream dis;
     DataOutputStream dos;
+    int[] tmp = new int[6];
 
     public PlayerTwoReceive(RoadLogic RL, DataInputStream diStream, DataOutputStream doStream){
         roadLogic = RL;
@@ -15,7 +16,6 @@ public class PlayerTwoReceive extends Thread {
         dos = doStream;
     }
     private void recieve() throws IOException {
-        int[] tmp = new int[6];
         for(int i = 0; i < 6; i++){
             tmp[i] = dis.readInt();
         }

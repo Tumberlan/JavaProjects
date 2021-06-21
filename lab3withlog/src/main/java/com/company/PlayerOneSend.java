@@ -10,6 +10,7 @@ public class PlayerOneSend extends Thread{
     DataInputStream dis;
     DataOutputStream dos;
     String pName;
+    int[] tmp;
 
     public PlayerOneSend(RoadLogic RL, DataInputStream diStream, DataOutputStream doStream, String name){
         roadLogic = RL;
@@ -19,7 +20,7 @@ public class PlayerOneSend extends Thread{
     }
 
     private void send() throws IOException {
-        int[] tmp = roadLogic.player.GiveChanges();
+        tmp = roadLogic.player.GiveChanges();
         for(int i = 0; i < 6;i++){
             dos.writeInt(tmp[i]);
         }

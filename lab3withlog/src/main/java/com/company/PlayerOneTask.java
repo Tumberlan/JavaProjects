@@ -12,6 +12,7 @@ public class PlayerOneTask implements Runnable {
     DataOutputStream dos;
     ArrayList<Boolean> readyList;
     int ownNumber;
+    int[] tmp = new int[6];
 
     public PlayerOneTask(DataInputStream diStream, DataOutputStream doStream, ArrayList<Boolean> rlst,int number){
         dis = diStream;
@@ -21,7 +22,6 @@ public class PlayerOneTask implements Runnable {
     }
 
     private void sendReceive() throws IOException {
-        int[] tmp = new int[6];
         boolean done = false;
         for(int i = 0; i < 6;i++){
             tmp[i] = dis.readInt();
