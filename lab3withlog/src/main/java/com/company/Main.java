@@ -5,14 +5,12 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
-       Multiplayer MP = new Multiplayer();
-       MP.StartServer("localhost", 22222);
 
 
 
-
-       /* boolean online = false;
-        boolean isDriver = true;
+        boolean isServer = false;
+        boolean online = false;
+        boolean isDriver = false;
         String name = "";
         Scanner scanner = new Scanner(System.in);
         String command = scanner.nextLine();
@@ -27,6 +25,9 @@ public class Main{
             if(command.equals("spam")) {
                 isDriver = false;
             }
+            if(command.equals("server")){
+                isServer = true;
+            }
         }
         if(command.equals("desktop")){
             online = false;
@@ -36,16 +37,19 @@ public class Main{
         if(online) {
             if(isDriver) {
                 Multiplayer MP = new Multiplayer();
-                MP.InitServer("localhost", 22222, name);
+                MP.connectDriver("localhost", 22222, name);
+            }else if(isServer){
+                Multiplayer MP = new Multiplayer();
+                MP.StartServer("localhost", 22222);
             }else{
                 Multiplayer MP = new Multiplayer();
-                MP.connect("localhost", 22222, name);
+                MP.connectSpamer("localhost", 22222, name);
             }
         }else{
             RoadLogic roadLogic = new RoadLogic(false);
             RaceLayout RL = new RaceLayout();
             RL.StartLayout(1, roadLogic, name);
         }
-        */
+
     }
 }
