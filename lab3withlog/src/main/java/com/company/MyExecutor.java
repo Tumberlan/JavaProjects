@@ -135,7 +135,6 @@ public class MyExecutor {
                         dosS.get(pOneIdx).writeBoolean(true);
                         dosS.get(pTwoIdx).writeBoolean(true);
                     } catch (IOException e) {
-                        e.printStackTrace();
                     }
                 }
             }
