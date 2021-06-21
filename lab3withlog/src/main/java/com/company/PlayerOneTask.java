@@ -3,6 +3,7 @@ package com.company;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 
@@ -50,7 +51,6 @@ public class PlayerOneTask implements Runnable {
         try {
             dos.writeBoolean(true);
         } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 }

@@ -44,7 +44,6 @@ public class PlayerTwoTask implements Runnable {
         try {
             dos.writeBoolean(true);
         } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 }

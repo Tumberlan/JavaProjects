@@ -1,14 +1,17 @@
+Sally=37
 Sam=31
 1234=28
 Speedy?=27
 21441=24
 ju=22
+Mill=21
 1344=19
 honey=19
 1234=17
 =17
 Chicko=17
 death racer=16
+Scally=15
 =12
 ji=12
 SPEEDDEAMON=11
