@@ -8,6 +8,7 @@ public class PlayerOneReceive extends Thread{
     RoadLogic roadLogic;
     DataInputStream dis;
     DataOutputStream dos;
+    int[] tmp = new int[3];
 
     public PlayerOneReceive(RoadLogic RL, DataInputStream diStream, DataOutputStream doStream){
         roadLogic = RL;
@@ -16,7 +17,10 @@ public class PlayerOneReceive extends Thread{
     }
 
     private void recieve() throws IOException {
-        int[] tmp = new int[3];
+        boolean isOver = dis.readBoolean();
+        if(isOver){
+            roadLogic.deactivateFabric = false;
+        }
         for (int i = 0; i < 3; i++){
             tmp[i] = dis.readInt();
         }

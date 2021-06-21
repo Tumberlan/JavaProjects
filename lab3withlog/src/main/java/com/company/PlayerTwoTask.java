@@ -8,13 +8,13 @@ import java.util.concurrent.Callable;
 public class PlayerTwoTask implements Runnable {
     DataInputStream dis;
     DataOutputStream dos;
+    int[] tmp = new int[3];
 
     public PlayerTwoTask(DataInputStream diStream, DataOutputStream doStream){
         dis = diStream;
         dos = doStream;
     }
     private void sendReceive() throws IOException {
-        int[] tmp = new int[3];
         boolean done = false;
         for (int i = 0; i < 3; i++){
             tmp[i] = dis.readInt();
@@ -24,6 +24,7 @@ public class PlayerTwoTask implements Runnable {
         }
         boolean spammed = dis.readBoolean();
         if(done) {
+            dos.writeBoolean(false);
             for (int i = 0; i < 3; i++) {
                 dos.writeInt(tmp[i]);
             }
@@ -39,6 +40,11 @@ public class PlayerTwoTask implements Runnable {
             }catch (IOException e){
                 isGo = false;
             }
+        }
+        try {
+            dos.writeBoolean(true);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
