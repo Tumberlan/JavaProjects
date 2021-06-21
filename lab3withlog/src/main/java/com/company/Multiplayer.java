@@ -6,6 +6,10 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.Executor;
 
 public class Multiplayer extends Thread{
     private String ip = "localHost";
@@ -19,9 +23,23 @@ public class Multiplayer extends Thread{
     DataOutputStream dos;
     PlayerOneSend playerOneSend;
     PlayerTwoSend playerTwoSend;
-    PlayerOneRecieve playerOneRecieve;
-    PlayerTwoRecieve playerTwoRecieve;
+    PlayerOneReceive playerOneReceive;
+    PlayerTwoReceive playerTwoReceive;
 
+    public void StartServer(String new_ip, int new_port){
+        ip = new_ip;
+        port = new_port;
+        try{
+            serverSocket = new ServerSocket(port, 8, InetAddress.getByName(ip));
+            MyExecutor myExecutor = new MyExecutor(serverSocket);
+            myExecutor.runExecutor();
+            System.out.println("Server started");
+            isServer = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+/*
     public void InitServer(String new_ip, int new_port,String name){
         ip = new_ip;
         port = new_port;
@@ -31,28 +49,46 @@ public class Multiplayer extends Thread{
             socket = serverSocket.accept();
             dos = new DataOutputStream(socket.getOutputStream());
             dis = new DataInputStream(socket.getInputStream());
-            playerOneSend = new PlayerOneSend(name);
+            playerOneSend = new PlayerOneSend(roadLogic,dis,dos,name);
             playerOneSend.start();
-            playerOneRecieve = new PlayerOneRecieve();
-            playerOneRecieve.start();
+            playerOneReceive = new PlayerOneReceive(roadLogic,dis,dos);
+            playerOneReceive.start();
             System.out.println("Server started");
             isServer = true;
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
-    public void connect(String new_ip, int new_port, String name){
+*/
+    public void connectSpamer(String new_ip, int new_port, String name){
         ip = new_ip;
         port = new_port;
         try{
             socket=new Socket(ip,port);
             dos = new DataOutputStream(socket.getOutputStream());
             dis = new DataInputStream(socket.getInputStream());
-            playerTwoSend = new PlayerTwoSend(name);
+            playerTwoSend = new PlayerTwoSend(roadLogic,dis,dos,name);
             playerTwoSend.start();
-            playerTwoRecieve = new PlayerTwoRecieve();
-            playerTwoRecieve.start();
+            playerTwoReceive = new PlayerTwoReceive(roadLogic,dis,dos);
+            playerTwoReceive.start();
+            isConnected = true;
+            System.out.println("Successfully connected to the server");
+        } catch (IOException e) {
+            System.out.println("Unable to connect to the server");
+        }
+    }
+
+    public void connectDriver(String new_ip, int new_port, String name){
+        ip = new_ip;
+        port = new_port;
+        try{
+            socket = new Socket(ip,port);
+            dos = new DataOutputStream(socket.getOutputStream());
+            dis = new DataInputStream(socket.getInputStream());
+            playerTwoSend = new PlayerTwoSend(roadLogic,dis,dos,name);
+            playerTwoSend.start();
+            playerTwoReceive = new PlayerTwoReceive(roadLogic,dis,dos);
+            playerTwoReceive.start();
             isConnected = true;
             System.out.println("Successfully connected to the server");
         } catch (IOException e) {
@@ -61,7 +97,105 @@ public class Multiplayer extends Thread{
     }
 
 
-    private class PlayerOneSend extends Thread{
+  /*  public class ThreadPool implements Executor {
+        private final Queue<Runnable> playerOneQueue = new ConcurrentLinkedQueue<>();
+        private final Queue<Runnable> playerTwoQueue = new ConcurrentLinkedQueue<>();
+        private volatile boolean isRunning = false;
+
+        public ThreadPool(int nThreads){
+            for (int i =0; i < nThreads; i++){
+                new Thread(new TaskWorker()).start();
+            }
+        }
+
+        @Override
+        public void execute(Runnable command){
+            if(isRunning){
+                if()
+                playerOneQueue.offer(command);
+                playerTwoQueue.offer(command);
+            }
+        }
+
+        public void shutdown() {
+            isRunning = false;
+        }
+
+        private final class TaskWorker implements Runnable{
+            @Override
+            public void run(){
+                while (isRunning){
+                    Runnable pFirstNeed = playerOneQueue.poll();
+                    Runnable pSecondNeed = playerTwoQueue.poll();
+                    if(pFirstNeed != null && pSecondNeed != null){
+                        pFirstNeed.run();
+                        pSecondNeed.run();
+                    }
+                }
+            }
+        }
+    }
+
+    public class ServerPlayerOne extends Thread{
+        private void sendReceive() throws IOException {
+            int[] tmp = roadLogic.player.GiveChanges();
+            for(int i = 0; i < 6;i++){
+                dos.writeInt(tmp[i]);
+            }
+            for(int i = 0; i < 6;i++){
+                dos.writeInt(tmp[i]);
+            }
+        }
+
+        public void run(){
+            boolean isGo = true;
+            while (isGo){
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    sendReceive();
+                }catch (IOException e){
+                    isGo = false;
+                }
+            }
+        }
+    }
+
+
+    public class ServerPlayerTwo extends Thread{
+        private void sendReceive() throws IOException {
+            int[] tmp = new int[3];
+            for (int i = 0; i < 3; i++){
+                tmp[i] = dis.readInt();
+            }
+            boolean spammed = dis.readBoolean();
+            for(int i = 0; i < 3;i++){
+                dos.writeInt(tmp[i]);
+            }
+            dos.writeBoolean(spammed);
+        }
+
+        public void run(){
+            boolean isGo = true;
+            while (isGo){
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    sendReceive();
+                }catch (IOException e){
+                    isGo = false;
+                }
+            }
+        }
+    }
+
+    public class PlayerOneSend extends Thread{
         String pName;
         private PlayerOneSend(String name){
             pName = name;
@@ -94,7 +228,7 @@ public class Multiplayer extends Thread{
         }
     }
 
-    private class PlayerTwoSend extends Thread{
+    public class PlayerTwoSend extends Thread{
         String pName;
         private PlayerTwoSend(String name){
             pName = name;
@@ -127,7 +261,7 @@ public class Multiplayer extends Thread{
         }
     }
 
-    private class PlayerOneRecieve extends Thread{
+    public class PlayerOneRecieve extends Thread{
         private void recieve() throws IOException{
             int[] tmp = new int[3];
             for (int i = 0; i < 3; i++){
@@ -159,7 +293,7 @@ public class Multiplayer extends Thread{
         }
     }
 
-    private class PlayerTwoRecieve extends Thread{
+    public class PlayerTwoRecieve extends Thread{
         private void recieve() throws IOException{
             int[] tmp = new int[6];
             for(int i = 0; i < 6; i++){
@@ -190,5 +324,5 @@ public class Multiplayer extends Thread{
             }
         }
     }
-    
+*/
 }

@@ -5,7 +5,13 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
-        boolean online = false;
+       Multiplayer MP = new Multiplayer();
+       MP.StartServer("localhost", 22222);
+
+
+
+
+       /* boolean online = false;
         boolean isDriver = true;
         String name = "";
         Scanner scanner = new Scanner(System.in);
@@ -40,8 +46,6 @@ public class Main{
             RaceLayout RL = new RaceLayout();
             RL.StartLayout(1, roadLogic, name);
         }
-        /*FirstLayout FL = new FirstLayout();
-        FL.StartLayout();*/
-
+        */
     }
 }
