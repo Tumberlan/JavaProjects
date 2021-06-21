@@ -10,3 +10,4 @@ me=10
 rrr=10
 Shumaher=10
 Igor=7
+yae=7

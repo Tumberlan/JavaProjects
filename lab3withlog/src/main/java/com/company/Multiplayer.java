@@ -82,13 +82,15 @@ public class Multiplayer extends Thread{
         ip = new_ip;
         port = new_port;
         try{
-            socket = new Socket(ip,port);
+            serverSocket = new ServerSocket(port, 8, InetAddress.getByName(ip));
+            socket = serverSocket.accept();
             dos = new DataOutputStream(socket.getOutputStream());
             dis = new DataInputStream(socket.getInputStream());
-            playerTwoSend = new PlayerTwoSend(roadLogic,dis,dos,name);
-            playerTwoSend.start();
-            playerTwoReceive = new PlayerTwoReceive(roadLogic,dis,dos);
-            playerTwoReceive.start();
+            playerOneSend = new PlayerOneSend(roadLogic,dis,dos,name);
+            playerOneSend.start();
+            playerOneReceive = new PlayerOneReceive(roadLogic,dis,dos);
+            playerOneReceive.start();
+            System.out.println("Server started");
             isConnected = true;
             System.out.println("Successfully connected to the server");
         } catch (IOException e) {
