@@ -15,24 +15,26 @@ public class PlayerTwoTask implements Callable<Boolean> {
     }
     private void sendReceive() throws IOException {
         int[] tmp = new int[3];
+        boolean done = false;
         for (int i = 0; i < 3; i++){
             tmp[i] = dis.readInt();
+            if(tmp[i] != 0){
+                done = true;
+            }
         }
         boolean spammed = dis.readBoolean();
-        for(int i = 0; i < 3;i++){
-            dos.writeInt(tmp[i]);
+        if(done) {
+            System.out.println(done);
+            for (int i = 0; i < 3; i++) {
+                dos.writeInt(tmp[i]);
+            }
+            dos.writeBoolean(spammed);
         }
-        dos.writeBoolean(spammed);
     }
 
     public Boolean call(){
         boolean isGo = true;
         while (isGo){
-            try {
-                Thread.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
             try {
                 sendReceive();
             }catch (IOException e){

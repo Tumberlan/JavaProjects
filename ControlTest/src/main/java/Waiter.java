@@ -1,31 +1,30 @@
-import java.util.Random;
-import java.util.concurrent.Exchanger;
+public class Waiter extends Thread {
 
-public class Waiter implements Runnable{
-    public Waiter(Exchanger<MealType> name){
-        what = name;
-        System.out.println("Waiter Took order");
+    private Restaurant restaurant;
+
+    public Waiter(Restaurant rest) {
+        restaurant = rest;
     }
-    Exchanger<MealType> what;
-    MealType mealName;
-    static int howMany = 0;
+
     public void run(){
-        try {
-            while (howMany < 10) {
-                mealName = what.exchange(mealName);
-                GiveMeal();
-                howMany++;
+        for (int i = 0; i < 10; i++){
+            synchronized (restaurant.lock) {
+                try {
+                    restaurant.lock.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
-        }catch (InterruptedException e){
-            e.printStackTrace();
+            synchronized (restaurant.lock){
+                try {
+                    restaurant.meals[i].deliverMeal();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            synchronized (restaurant.lock) {
+                restaurant.lock.notify();
+            }
         }
-    }
-    public void GiveMeal() throws InterruptedException {
-        Random random = new Random();
-        int a = 0;
-        for(int i = 0; i < random.nextInt(100)+10; i++){
-            a++;
-        }
-        System.out.println("Waiter Want meal");
     }
 }

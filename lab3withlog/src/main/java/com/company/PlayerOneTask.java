@@ -23,22 +23,23 @@ public class PlayerOneTask implements Callable<Boolean> {
 
     private void sendReceive() throws IOException {
         int[] tmp = new int[6];
+        boolean done = false;
         for(int i = 0; i < 6;i++){
             tmp[i] = dis.readInt();
+            if(tmp[i] != 0) {
+                done = true;
+            }
         }
-        for(int i = 0; i < 6;i++){
-            dos.writeInt(tmp[i]);
+        if(done) {
+            for (int i = 0; i < 6; i++) {
+                dos.writeInt(tmp[i]);
+            }
         }
     }
 
     public Boolean call(){
-        boolean isGo = false;
+        boolean isGo = true;
         while (isGo){
-            try {
-                Thread.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
             try {
                 sendReceive();
             }catch (IOException e){

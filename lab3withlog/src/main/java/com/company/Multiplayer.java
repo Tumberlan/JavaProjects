@@ -64,9 +64,17 @@ public class Multiplayer extends Thread{
         ip = new_ip;
         port = new_port;
         try{
+            boolean isReady = false;
             socket=new Socket(ip,port);
             dos = new DataOutputStream(socket.getOutputStream());
             dis = new DataInputStream(socket.getInputStream());
+            dos.writeInt(2);
+            while(!isReady){
+                boolean tmp = dis.readBoolean();
+                if(tmp){
+                    isReady = tmp;
+                }
+            }
             playerTwoSend = new PlayerTwoSend(roadLogic,dis,dos,name);
             playerTwoSend.start();
             playerTwoReceive = new PlayerTwoReceive(roadLogic,dis,dos);
@@ -82,12 +90,21 @@ public class Multiplayer extends Thread{
         ip = new_ip;
         port = new_port;
         try{
-            serverSocket = new ServerSocket(port, 8, InetAddress.getByName(ip));
-            socket = serverSocket.accept();
+            boolean isReady = false;
+            socket = new Socket(ip,port);
             dos = new DataOutputStream(socket.getOutputStream());
             dis = new DataInputStream(socket.getInputStream());
+            dos.writeInt(1);
+            while(!isReady){
+                boolean tmp = dis.readBoolean();
+                if(tmp){
+                    isReady = tmp;
+                }
+            }
+            System.out.println("I AM");
             playerOneSend = new PlayerOneSend(roadLogic,dis,dos,name);
             playerOneSend.start();
+            System.out.println("GAY");
             playerOneReceive = new PlayerOneReceive(roadLogic,dis,dos);
             playerOneReceive.start();
             System.out.println("Server started");

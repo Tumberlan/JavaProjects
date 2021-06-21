@@ -1,10 +1,16 @@
-import java.util.concurrent.Exchanger;
 
 public class Restaurant {
 
-    public void work(){
-        Exchanger<MealType> swap = new Exchanger<MealType>();
-        new Thread((Runnable) new Chef(swap)).start();
-        new Thread((Runnable) new Waiter(swap)).start();
+    public Meal[] meals = new Meal[10];
+
+    public final Object lock = new Object();
+
+    public Waiter waiter = new Waiter(this);
+
+    public Chef chef = new Chef(this);
+
+    public void run(){
+        chef.start();
+        waiter.start();
     }
 }
