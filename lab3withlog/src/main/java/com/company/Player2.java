@@ -113,7 +113,11 @@ public class Player2 {
                 spamCar = true;
                 carWasSpammed = true;
                 task.isReady = false;
-                timer.schedule(task,1000,1000);
+                try {
+                    timer.schedule(task, 1000, 1000);
+                }catch (IllegalStateException e){
+
+                }
             }
         }
     }

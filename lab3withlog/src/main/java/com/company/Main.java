@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
-
-
-
         boolean isServer = false;
         boolean online = false;
         boolean isDriver = false;
@@ -41,6 +38,10 @@ public class Main{
             }else if(isServer){
                 Multiplayer MP = new Multiplayer();
                 MP.StartServer("localhost", 22222);
+                command = scanner.nextLine();
+                if(command.equals("shut down")){
+                    MP.StopServer();
+                }
             }else{
                 Multiplayer MP = new Multiplayer();
                 MP.connectSpamer("localhost", 22222, name);

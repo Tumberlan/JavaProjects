@@ -5,7 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.concurrent.Callable;
 
-public class PlayerTwoTask implements Callable<Boolean> {
+public class PlayerTwoTask implements Runnable {
     DataInputStream dis;
     DataOutputStream dos;
 
@@ -24,7 +24,6 @@ public class PlayerTwoTask implements Callable<Boolean> {
         }
         boolean spammed = dis.readBoolean();
         if(done) {
-            System.out.println(done);
             for (int i = 0; i < 3; i++) {
                 dos.writeInt(tmp[i]);
             }
@@ -32,7 +31,7 @@ public class PlayerTwoTask implements Callable<Boolean> {
         }
     }
 
-    public Boolean call(){
+    public void run(){
         boolean isGo = true;
         while (isGo){
             try {
@@ -41,6 +40,5 @@ public class PlayerTwoTask implements Callable<Boolean> {
                 isGo = false;
             }
         }
-        return true;
     }
 }

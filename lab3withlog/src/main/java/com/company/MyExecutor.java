@@ -10,8 +10,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class MyExecutor {
-    ExecutorService pOneService = Executors.newFixedThreadPool(25);
-    ExecutorService pTwoService = Executors.newFixedThreadPool(25);
+    MyThreadPool threadPool = new MyThreadPool(4, 10);
     private static final int UNKNOWN = 0;
     private static final int DRIVER = 1;
     private static final int SPAMER = 2;
@@ -27,7 +26,6 @@ public class MyExecutor {
     int connectedPTwos = 0;
     Queue<Integer> POneQueue = new LinkedList<Integer>();
     Queue<Integer> PTwoQueue = new LinkedList<Integer>();
-    ArrayList<Future> futureList = new ArrayList<Future>();
     ArrayList<Boolean> readyList = new ArrayList<Boolean>();
     int queuedPOnes = 0;
     int queuedPTwos = 0;
@@ -42,19 +40,21 @@ public class MyExecutor {
         }
     }
 
-    public MyExecutor(ServerSocket SS){
+    public MyExecutor(ServerSocket SS) throws InterruptedException {
         serverSocket = SS;
     }
     public void runExecutor() throws IOException, ExecutionException, InterruptedException {
 
         RequestManager requestManager = new RequestManager(serverSocket);
         requestManager.start();
-        System.out.println("OKEY");
         TaskManager taskManager = new TaskManager();
         taskManager.start();
 
     }
 
+    public void Stop(){
+        threadPool.stop();
+    }
     private class RequestManager extends Thread{
         ServerSocket serverSocket;
         private RequestManager(ServerSocket sS){
@@ -118,28 +118,32 @@ public class MyExecutor {
                     e.printStackTrace();
                 }
                 if(queuedPOnes > 0 && queuedPTwos > 0) {
-                        System.out.println("GO");
-                        queuedPOnes--;
-                        queuedPTwos--;
-                        int pOneIdx = POneQueue.remove();
-                        System.out.println(pOneIdx);
-                        int pTwoIdx = PTwoQueue.remove();
-                        System.out.println(pTwoIdx);
-                        System.out.println(disS.get(pOneIdx));
-                        System.out.println(disS.get(pTwoIdx));
-                        PlayerOneTask playerOneTask = new PlayerOneTask(disS.get(pOneIdx),
-                                dosS.get(pTwoIdx), readyList, pOneIdx);
-                        PlayerTwoTask playerTwoTask = new PlayerTwoTask(disS.get(pTwoIdx),
-                                dosS.get(pOneIdx));
-                        Future<Boolean> fTaskPOne = pOneService.submit(playerOneTask);
-                        Future<Boolean> fTaskPTwo = pTwoService.submit(playerTwoTask);
-                        futureList.add(fTaskPOne);
-                        try {
-                            dosS.get(pOneIdx).writeBoolean(true);
-                            dosS.get(pTwoIdx).writeBoolean(true);
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
+                    System.out.println("GO");
+                    queuedPOnes--;
+                    queuedPTwos--;
+                    int pOneIdx = POneQueue.remove();
+                    System.out.println(pOneIdx);
+                    int pTwoIdx = PTwoQueue.remove();
+                    System.out.println(pTwoIdx);
+                    System.out.println(disS.get(pOneIdx));
+                    System.out.println(disS.get(pTwoIdx));
+                    PlayerOneTask playerOneTask = new PlayerOneTask(disS.get(pOneIdx),
+                            dosS.get(pTwoIdx), readyList, pOneIdx);
+                    PlayerTwoTask playerTwoTask = new PlayerTwoTask(disS.get(pTwoIdx),
+                            dosS.get(pOneIdx));
+                    try {
+                        threadPool.execute(playerOneTask);
+                        threadPool.execute(playerTwoTask);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        dosS.get(pOneIdx).writeBoolean(true);
+                        dosS.get(pTwoIdx).writeBoolean(true);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }

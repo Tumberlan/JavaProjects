@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 
-public class PlayerOneTask implements Callable<Boolean> {
+public class PlayerOneTask implements Runnable {
 
     DataInputStream dis;
     DataOutputStream dos;
@@ -19,7 +19,6 @@ public class PlayerOneTask implements Callable<Boolean> {
         readyList = rlst;
         ownNumber = number;
     }
-
 
     private void sendReceive() throws IOException {
         int[] tmp = new int[6];
@@ -37,7 +36,7 @@ public class PlayerOneTask implements Callable<Boolean> {
         }
     }
 
-    public Boolean call(){
+    public void run(){
         boolean isGo = true;
         while (isGo){
             try {
@@ -47,6 +46,5 @@ public class PlayerOneTask implements Callable<Boolean> {
             }
         }
         readyList.set(ownNumber, true);
-        return true;
     }
 }
