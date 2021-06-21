@@ -23,7 +23,7 @@ public class PoolThreadRunnable implements Runnable {
         }
     }
 
-    public synchronized void doStop(){
+    public synchronized void Stop(){
         isStopped = true;
         this.thread.interrupt();
     }

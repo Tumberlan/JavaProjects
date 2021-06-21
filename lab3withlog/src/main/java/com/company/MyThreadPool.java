@@ -32,7 +32,7 @@ public class MyThreadPool {
     public synchronized void stop(){
         this.isStopped = true;
         for(PoolThreadRunnable runnable : runnables){
-            runnable.doStop();
+            runnable.Stop();
         }
     }
 
