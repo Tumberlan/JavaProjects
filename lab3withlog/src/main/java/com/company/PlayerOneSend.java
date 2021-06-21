@@ -32,7 +32,7 @@ public class PlayerOneSend extends Thread{
         RL.StartLayout(1, roadLogic, pName);
         while (isGo){
             try {
-                Thread.sleep(10);
+                Thread.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

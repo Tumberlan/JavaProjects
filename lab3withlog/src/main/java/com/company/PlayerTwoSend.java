@@ -33,7 +33,7 @@ public class PlayerTwoSend extends Thread{
         boolean isGo = true;
         while (isGo){
             try {
-                Thread.sleep(10);
+                Thread.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
