@@ -74,7 +74,7 @@ public class MyExecutor {
                 int isDriver = disTmp.readInt();
                 boolean isAdded = false;
                 if(isDriver == 1){
-                    System.out.println("1 connected, " + disTmp);
+                    System.out.println("1 connected");
                     sockets.set(connectedPlayers,new MySocket(DRIVER,sockets.get(connectedPlayers).socket));
                     POneNumbers.add(connectedPlayers);
                     POneQueue.add(connectedPlayers);
@@ -83,7 +83,6 @@ public class MyExecutor {
                     queuedPOnes++;
                     isAdded = true;
                 }else if (isDriver == 2){
-                    System.out.println("1 connected, " + disTmp);
                     System.out.println("2 connected");
                     sockets.set(connectedPlayers,new MySocket(SPAMER,sockets.get(connectedPlayers).socket));
                     PTwoNumbers.add(connectedPlayers);
@@ -93,7 +92,6 @@ public class MyExecutor {
                     isAdded = true;
                 }
                 if(isAdded) {
-                    System.out.println("Another one");
                     disS.add(disTmp);
                     dosS.add(dosTmp);
                     connectedPlayers++;
@@ -118,7 +116,6 @@ public class MyExecutor {
                     e.printStackTrace();
                 }
                 if(queuedPOnes > 0 && queuedPTwos > 0) {
-                    System.out.println("GO");
                     queuedPOnes--;
                     queuedPTwos--;
                     int pOneIdx = POneQueue.remove();
