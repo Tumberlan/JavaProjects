@@ -30,6 +30,7 @@ public class PlayerOneTask implements Runnable {
             }
         }
         if(done) {
+            dos.writeBoolean(false);
             for (int i = 0; i < 6; i++) {
                 dos.writeInt(tmp[i]);
             }
@@ -46,5 +47,10 @@ public class PlayerOneTask implements Runnable {
             }
         }
         readyList.set(ownNumber, true);
+        try {
+            dos.writeBoolean(true);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

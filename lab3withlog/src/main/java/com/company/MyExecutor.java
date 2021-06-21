@@ -119,11 +119,7 @@ public class MyExecutor {
                     queuedPOnes--;
                     queuedPTwos--;
                     int pOneIdx = POneQueue.remove();
-                    System.out.println(pOneIdx);
                     int pTwoIdx = PTwoQueue.remove();
-                    System.out.println(pTwoIdx);
-                    System.out.println(disS.get(pOneIdx));
-                    System.out.println(disS.get(pTwoIdx));
                     PlayerOneTask playerOneTask = new PlayerOneTask(disS.get(pOneIdx),
                             dosS.get(pTwoIdx), readyList, pOneIdx);
                     PlayerTwoTask playerTwoTask = new PlayerTwoTask(disS.get(pTwoIdx),

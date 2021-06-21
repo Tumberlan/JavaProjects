@@ -16,6 +16,11 @@ public class PlayerTwoReceive extends Thread {
         dos = doStream;
     }
     private void recieve() throws IOException {
+        boolean isOver = dis.readBoolean();
+        if(isOver){
+            System.out.println("your opponent left");
+            System.exit(1);
+        }
         for(int i = 0; i < 6; i++){
             tmp[i] = dis.readInt();
         }
