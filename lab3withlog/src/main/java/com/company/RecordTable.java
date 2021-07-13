@@ -5,7 +5,7 @@ import java.util.*;
 
 public class RecordTable {
 
-    public File file = new File("C:\\Users\\Igor\\ProgProjects\\JavaProjects\\lab3withlog\\src\\res", "RECORDS.txt");
+    public File file = new File("src\\res", "RECORDS.txt");
 
     public class Record{
         String name;
@@ -31,8 +31,9 @@ public class RecordTable {
             AddNewRecord(name, val, RecordList);
             Collections.sort(RecordList,new RecordComparator());
             int i = 0;
-            FileOutputStream fos = new FileOutputStream("C:\\Users\\Igor\\ProgProjects\\JavaProjects\\lab3withlog\\src\\res\\RECORDS.txt");
+            FileOutputStream fos = new FileOutputStream("src\\res\\RECORDS.txt");
             PrintStream ps = new PrintStream(fos);
+            System.out.println("---RECORD TABLE---");
             for(Record record:RecordList) {
                 if(i<10){
                     System.out.println((i+1)+")"+record.name+": "+record.value);
@@ -48,7 +49,8 @@ public class RecordTable {
 
 
     public void AddNewRecord(String name, int value, ArrayList<Record> list) throws IOException {
-       list.add(new Record(name,String.valueOf(value)));
+        System.out.println(name + ", your score: " + value);
+        list.add(new Record(name,String.valueOf(value)));
 
     }
 

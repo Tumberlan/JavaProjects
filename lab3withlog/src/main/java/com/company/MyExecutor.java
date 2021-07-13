@@ -10,7 +10,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class MyExecutor {
-    MyThreadPool threadPool = new MyThreadPool(4, 10);
+    MyThreadPool threadPool = new MyThreadPool(2, 10);
     private static final int UNKNOWN = 0;
     private static final int DRIVER = 1;
     private static final int SPAMER = 2;

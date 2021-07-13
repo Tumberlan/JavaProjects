@@ -3,7 +3,6 @@ package com.company;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.util.concurrent.Callable;
 
 public class PlayerTwoTask implements Runnable {
     DataInputStream dis;

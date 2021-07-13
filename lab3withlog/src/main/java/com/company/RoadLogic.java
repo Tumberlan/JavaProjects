@@ -22,7 +22,6 @@ public class RoadLogic implements Runnable {
     int speed = 0;
     int enY = 0;
     boolean spammer = false;
-    //Thread Audio = new Thread(new AudioThread());
 
     ArrayList<Enemy> enemyList = new ArrayList<Enemy>();
 

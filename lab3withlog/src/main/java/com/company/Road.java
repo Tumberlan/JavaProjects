@@ -82,15 +82,18 @@ public class Road extends JPanel implements ActionListener{
         g = (Graphics2D)g;
         RL.SortEnemies();
         boolean player_drawn = false;
-        for (Enemy enemy : RL.enemyList) {
-            if (enemy.priority > RL.player.priority && !player_drawn) {
-                g.drawImage(RL.player.image, RL.player.x, RL.player.y, null);
-                player_drawn = true;
+        try {
+            for (Enemy enemy : RL.enemyList) {
+                if (enemy.priority > RL.player.priority && !player_drawn) {
+                    g.drawImage(RL.player.image, RL.player.x, RL.player.y, null);
+                    player_drawn = true;
+                }
+                g.drawImage(enemy.image, enemy.x, enemy.y, null);
             }
-            g.drawImage(enemy.image, enemy.x, enemy.y, null);
-        }
-        if (!player_drawn) {
-            g.drawImage(RL.player.image, RL.player.x, RL.player.y, null);
+            if (!player_drawn) {
+                g.drawImage(RL.player.image, RL.player.x, RL.player.y, null);
+            }
+        }catch (Exception e){
         }
 
     }
